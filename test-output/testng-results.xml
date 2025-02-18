@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-18T16:26:24 GMT" name="Default suite" finished-at="2025-02-18T16:27:10 GMT" duration-ms="46206">
+    <groups>
+    </groups>
+    <test started-at="2025-02-18T16:26:24 GMT" name="Default test" finished-at="2025-02-18T16:27:10 GMT" duration-ms="46206">
+      <class name="tests.DemoTests_IOS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.DemoTests_IOS@4c12331b]" started-at="2025-02-18T16:26:24 GMT" name="setup" finished-at="2025-02-18T16:26:40 GMT" duration-ms="16112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="iOS_AppLaunch_DefaultDisplay_7465()[pri:0, instance:tests.DemoTests_IOS@4c12331b]" started-at="2025-02-18T16:26:40 GMT" name="iOS_AppLaunch_DefaultDisplay_7465" finished-at="2025-02-18T16:26:43 GMT" duration-ms="2552" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iOS_AppLaunch_DefaultDisplay_7465 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.DemoTests_IOS@4c12331b]" started-at="2025-02-18T16:26:43 GMT" name="afterMethod" finished-at="2025-02-18T16:26:44 GMT" duration-ms="1037" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.DemoTests_IOS@4c12331b]" started-at="2025-02-18T16:26:44 GMT" name="setup" finished-at="2025-02-18T16:26:58 GMT" duration-ms="14401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="iOS_AppLaunch_StartUpHelp_7469()[pri:0, instance:tests.DemoTests_IOS@4c12331b]" started-at="2025-02-18T16:26:58 GMT" name="iOS_AppLaunch_StartUpHelp_7469" finished-at="2025-02-18T16:27:09 GMT" duration-ms="11030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iOS_AppLaunch_StartUpHelp_7469 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.DemoTests_IOS@4c12331b]" started-at="2025-02-18T16:27:09 GMT" name="afterMethod" finished-at="2025-02-18T16:27:10 GMT" duration-ms="1028" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- tests.DemoTests_IOS -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

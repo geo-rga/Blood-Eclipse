@@ -1,0 +1,7 @@
+{
+	"landingPage": {
+		"arcLogo": {
+			"locators": [{"key": "id", "value":"com.cube.arc.blood:id/arc_logo","name": "id"},{"key": "xpath","value": "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.ImageView[1]","name": "xpath"},{"key":"elementId","value":"00000000-0000-0100-ffff-ffff00000010","name":"elementId"},{"key":"index","value":"0","name":"index"},{"key":"package","value":"com.cube.arc.blood","name":"package"},{"key":"class","value":"android.widget.ImageView","name":"class"},{"key":"text","value":"","name":"text"},{"key":"resource-id","value":"com.cube.arc.blood:id/arc_logo","name":"resource-id"},{"key":"checkable","value":"false","name":"checkable"},{"key":"checked","value":"false","name":"checked"},{"key":"clickable","value":"false","name":"clickable"},{"key":"enabled","value":"true","name":"enabled"},{"key":"focusable","value":"false","name":"focusable"},{"key":"focused","value":"false","name":"focused"},{"key":"long-clickable","value":"false","name":"long-clickable"},{"key":"password","value":"false","name":"password"},{"key":"scrollable","value":"false","name":"scrollable"},{"key":"selected","value":"false","name":"selected"},{"key":"bounds","value":"[63,147][1017,305]","name":"bounds"},{"key":"displayed","value":"true","name":"displayed"}]
+		}
+	}
+}
