@@ -41,6 +41,7 @@ public class InitClass {
 			androidObjects = new AndroidVariableStore(driver);
 			
 			platformName = capabilities.getCapability("platformName").toString();
+			TestConfig.setPlatformName(platformName);
 			
 			Thread.sleep(5000);
 		
@@ -55,7 +56,7 @@ public class InitClass {
 
 	@AfterMethod
 	public void androidAfterMethod() {
-		System.out.println("\n\n -------- END OF TEST -------- \n\n");
+		System.out.println("\n -------- END OF TEST -------- \n");
 		driver.quit();
 	}
 	
@@ -84,6 +85,7 @@ public class InitClass {
 			iosObjects = new IOSVariableStore(driver);
 			
 			platformName = capabilities.getCapability("platformName").toString();
+			TestConfig.setPlatformName(platformName);
 			
 			Thread.sleep(5000);
 			
@@ -96,7 +98,7 @@ public class InitClass {
 	
 	@AfterMethod
 	public void iosAfterMethod() {
-		System.out.println("\n\n -------- END OF TEST -------- \n\n");
+		System.out.println("\n -------- END OF TEST -------- \n");
 		driver.quit();
 	}
 	
