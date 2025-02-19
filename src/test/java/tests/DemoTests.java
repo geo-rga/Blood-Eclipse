@@ -2,8 +2,6 @@ package tests;
 
 import org.testng.annotations.*;
 
-import utils.CustomKeywords;
-
 public class DemoTests extends AndroidBase {
 	
 	@Test

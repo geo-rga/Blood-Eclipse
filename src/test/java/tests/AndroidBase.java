@@ -10,9 +10,6 @@ import org.openqa.selenium.remote.CapabilityType;
 // Ensure that annotations always come from org.testng
 import org.testng.annotations.*;
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.android.options.UiAutomator2Options;
-import utils.TestConfig;
-import io.appium.java_client.InteractsWithApps;
 
 public class AndroidBase {
 	

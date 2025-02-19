@@ -10,17 +10,9 @@ import org.openqa.selenium.remote.CapabilityType;
 // Ensure that annotations always come from org.testng
 import org.testng.annotations.*;
 import io.appium.java_client.AppiumDriver;
-import utils.TestConfig;
-
-//import org.testng.annotations.BeforeTest;
-
-
-
-// https://youtu.be/UlktcBntD6s?t=1211
 
 public class IOSBase {
 	
-//	RemoteWebDriver driver;
 	AppiumDriver driver;
 	public IOSVariableStore objects;
 	

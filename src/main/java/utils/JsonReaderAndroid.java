@@ -1,5 +1,6 @@
 package utils;
 
+import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
@@ -9,27 +10,14 @@ import org.openqa.selenium.By;
 
 import java.io.InputStreamReader;
 
-public class JsonReader {
+public class JsonReaderAndroid {
 	private static JsonObject jsonObjects;
 	
 	static {
 		
-		String jsonFile = "";
-		
-		try {
-			if (TestConfig.getPlatformName().equalsIgnoreCase("ANDROID")) {
-		        jsonFile = "androidObjects.json";
-		    } else if (TestConfig.getPlatformName().equalsIgnoreCase("IOS")) {
-		    	jsonFile = "iosObjects.json";
-		    } 
-		} catch (Exception e) {
-			throw new RuntimeException("Failed to get platform from Capabilities");	
-		}	
-		
-		
 		try { 
 			InputStreamReader reader = new InputStreamReader(
-                    JsonReader.class.getClassLoader().getResourceAsStream(jsonFile)
+                    JsonReader.class.getClassLoader().getResourceAsStream("androidObjects.json")
             );
             jsonObjects = JsonParser.parseReader(reader).getAsJsonObject();
 		} catch (Exception e) {
