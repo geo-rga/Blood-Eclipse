@@ -2,19 +2,27 @@ package tests;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
+import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 import io.appium.java_client.AppiumDriver;
+
+import utils.JsonReader;
 
 public class AndroidVariableStore {
 	
 	private AppiumDriver driver;
 	
+	
 	public AndroidVariableStore(AppiumDriver driver) {
 		this.driver = driver;
+		
+		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 	
 	// Locators
-	public final By img_landingPage_arcLogo_locator = By.id("com.cube.arc.blood:id/arc_logo");
+	public final By img_landingPage_arcLogo_locator = JsonReader.getLocator("landingPage", "img_landingPage_arcLogo");
+//	public final By img_landingPage_arcLogo_locator = By.id("com.cube.arc.blood:id/arc_logo");
 	public final By t_landingPage_title_locator = By.id("com.cube.arc.blood:id/app_title");
 	public final By img_landingPage_image_locator = By.id("com.cube.arc.blood:id/story_image");
 	public final By btn_landingPage_scheduleNewAppt_locator = By.id("com.cube.arc.blood:id/schedule");
