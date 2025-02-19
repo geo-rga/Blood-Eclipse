@@ -1,42 +1,63 @@
 {
 	"landingPage": {
 		"img_landingPage_arcLogo": {
-			"locators": [],
-			"attributes": []
+			"locators": [
+                {"type": "accessibility id", "value": "arcLogo"},
+                {"type": "xpath", "value": "//XCUIElementTypeImage[@name=\"arcLogo\"]"}
+            ],
+			"attributes": [{"key":"elementId","value":"28000000-0000-0000-F40A-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeImage","name":"type"},{"key":"name","value":"arcLogo","name":"name"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"false","name":"accessible"},{"key":"x","value":"124","name":"x"},{"key":"y","value":"66","name":"y"},{"key":"width","value":"127","name":"width"},{"key":"height","value":"43","name":"height"},{"key":"index","value":"0","name":"index"}]
 		},
 		"t_landingPage_title": {
-			"locators": [],
-			"attributes": []
+			"locators": [
+                {"type": "xpath", "value": "//XCUIElementTypeStaticText[@name=\"Blood Donor\"]"}
+            ],
+			"attributes": [{"key":"elementId","value":"1A000000-0000-0000-F40A-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeStaticText","name":"type"},{"key":"value","value":"Blood Donor","name":"value"},{"key":"name","value":"Blood Donor","name":"name"},{"key":"label","value":"Blood Donor","name":"label"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"true","name":"accessible"},{"key":"x","value":"15","name":"x"},{"key":"y","value":"115","name":"y"},{"key":"width","value":"345","name":"width"},{"key":"height","value":"50","name":"height"},{"key":"index","value":"2","name":"index"}]
         },
 		"img_landingPage_image": {
-			"locators": [],
-			"attributes": []
+			"locators": [
+                {"type": "accessibility id", "value": "1599760456098_tymia"},
+                {"type": "xpath", "value": "//XCUIElementTypeImage[@name=\"1599760456098_tymia\"]"}
+            ],
+			"attributes": [{"key":"elementId","value":"1C000000-0000-0000-F40A-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeImage","name":"type"},{"key":"name","value":"1599760456098_tymia","name":"name"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"false","name":"accessible"},{"key":"x","value":"15","name":"x"},{"key":"y","value":"194","name":"y"},{"key":"width","value":"345","name":"width"},{"key":"height","value":"191","name":"height"},{"key":"index","value":"4","name":"index"}]
         },
 		"btn_landingPage_scheduleNewAppt": {
-			"locators": [],
-			"attributes": []
+			"locators": [
+                {"type": "xpath", "value": "//XCUIElementTypeButton[@name=\"SCHEDULE NEW APPOINTMENT\"]"}
+            ],
+			"attributes": [{"key":"elementId","value":"20000000-0000-0000-F40A-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeButton","name":"type"},{"key":"name","value":"SCHEDULE NEW APPOINTMENT","name":"name"},{"key":"label","value":"SCHEDULE NEW APPOINTMENT","name":"label"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"true","name":"accessible"},{"key":"x","value":"15","name":"x"},{"key":"y","value":"504","name":"y"},{"key":"width","value":"345","name":"width"},{"key":"height","value":"46","name":"height"},{"key":"index","value":"8","name":"index"}]
         },
 		"btn_landingPage_createAccount": {
-            "locators": [],
-			"attributes": []
+            "locators": [
+                {"type": "xpath", "value": "//XCUIElementTypeButton[@name=\"CREATE ACCOUNT\"]"}
+            ],
+			"attributes": [{"key":"elementId","value":"22000000-0000-0000-F40A-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeButton","name":"type"},{"key":"name","value":"CREATE ACCOUNT","name":"name"},{"key":"label","value":"CREATE ACCOUNT","name":"label"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"true","name":"accessible"},{"key":"x","value":"15","name":"x"},{"key":"y","value":"559","name":"y"},{"key":"width","value":"345","name":"width"},{"key":"height","value":"46","name":"height"},{"key":"index","value":"10","name":"index"}]
         },
 		"btn_landingPage_logIn": {
-            "locators": [],
-			"attributes": []
+            "locators": [
+                {"type": "xpath", "value": "//XCUIElementTypeButton[@name=\"LOG IN\"]"}
+            ],
+			"attributes": [{"key":"elementId","value":"24000000-0000-0000-F40A-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeButton","name":"type"},{"key":"name","value":"LOG IN","name":"name"},{"key":"label","value":"LOG IN","name":"label"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"true","name":"accessible"},{"key":"x","value":"15","name":"x"},{"key":"y","value":"614","name":"y"},{"key":"width","value":"345","name":"width"},{"key":"height","value":"46","name":"height"},{"key":"index","value":"12","name":"index"}]
         },
 		"btn_landingPage_loginHelp": {
-            "locators": [],
-			"attributes": []
+            "locators": [
+                {"type": "xpath", "value": "//XCUIElementTypeStaticText[@name=\"Help with Sign Up or Log In\"]"}
+            ],
+			"attributes": [{"key":"elementId","value":"2C000000-0000-0000-F40A-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeStaticText","name":"type"},{"key":"value","value":"Help with Sign Up or Log In","name":"value"},{"key":"name","value":"Help with Sign Up or Log In","name":"name"},{"key":"label","value":"Help with Sign Up or Log In","name":"label"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"false","name":"accessible"},{"key":"x","value":"88","name":"x"},{"key":"y","value":"739","name":"y"},{"key":"width","value":"199","name":"width"},{"key":"height","value":"19","name":"height"},{"key":"index","value":"0","name":"index"}]
         }
 	},
 	"startUpHelp": {
 		"btn_startUpHelp_dropdown": {
-            "locators": [],
-			"attributes": []
+            "locators": [
+                {"type": "xpath", "value": "//XCUIElementTypeApplication[@name=\"Blood Donor\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]"}
+            ],
+			"attributes": [{"key":"elementId","value":"36000000-0000-0000-F40A-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeCell","name":"type"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"true","name":"accessible"},{"key":"x","value":"0","name":"x"},{"key":"y","value":"212","name":"y"},{"key":"width","value":"375","name":"width"},{"key":"height","value":"69","name":"height"},{"key":"index","value":"4","name":"index"}]
         },
 		"t_startUpHelp_dropdownContent": {
-            "locators": [],
-			"attributes": []
+            "locators": [
+                {"type": "accessibility id", "value": "If you have an existing username & password for redcrossblood.org, you should choose ‘Log in’ from the Welcome Screen, and use those same credentials to log in to the app.  If you do not have a username/password specific to redcrossblood.org, even if you’re an existing donor, you must create one by selecting ‘Sign up’ on the Welcome Screen in order to use the app."},
+                {"type": "xpath", "value": "//XCUIElementTypeStaticText[@name=\"If you have an existing username & password for redcrossblood.org, you should choose ‘Log in’ from the Welcome Screen, and use those same credentials to log in to the app.  If you do not have a username/password specific to redcrossblood.org, even if you’re an existing donor, you must create one by selecting ‘Sign up’ on the Welcome Screen in order to use the app.\"]"}
+            ],
+			"attributes": [{"key":"elementId","value":"5D000000-0000-0000-F40A-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeStaticText","name":"type"},{"key":"value","value":"If you have an existing username & password for redcrossblood.org, you should choose ‘Log in’ from the Welcome Screen, and use those same credentials to log in to the app.  If you do not have a username/password specific to redcrossblood.org, even if you’re an existing donor, you must create one by selecting ‘Sign up’ on the Welcome Screen in order to use the app.","name":"value"},{"key":"name","value":"If you have an existing username & password for redcrossblood.org, you should choose ‘Log in’ from the Welcome Screen, and use those same credentials to log in to the app.  If you do not have a username/password specific to redcrossblood.org, even if you’re an existing donor, you must create one by selecting ‘Sign up’ on the Welcome Screen in order to use the app.","name":"name"},{"key":"label","value":"If you have an existing username & password for redcrossblood.org, you should choose ‘Log in’ from the Welcome Screen, and use those same credentials to log in to the app.  If you do not have a username/password specific to redcrossblood.org, even if you’re an existing donor, you must create one by selecting ‘Sign up’ on the Welcome Screen in order to use the app.","name":"label"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"true","name":"accessible"},{"key":"x","value":"24","name":"x"},{"key":"y","value":"276","name":"y"},{"key":"width","value":"280","name":"width"},{"key":"height","value":"140","name":"height"},{"key":"index","value":"1","name":"index"}]
         }
 	}
 }

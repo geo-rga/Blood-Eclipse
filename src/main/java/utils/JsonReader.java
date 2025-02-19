@@ -3,6 +3,9 @@ package utils;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+
+import io.appium.java_client.MobileBy;
+
 import org.openqa.selenium.By;
 
 import java.io.InputStreamReader;
@@ -54,6 +57,7 @@ public class JsonReader {
             case "xpath" -> By.xpath(value);
             case "css" -> By.cssSelector(value);
             case "id" -> By.id(value);
+            case "accessibility id" -> MobileBy.accessibilityId(value);
             case "class" -> By.className(value);
             default -> throw new IllegalArgumentException("Unsupported locator type: " + type);
         };
