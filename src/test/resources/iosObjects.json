@@ -1,0 +1,42 @@
+{
+	"landingPage": {
+		"img_landingPage_arcLogo": {
+			"locators": [],
+			"attributes": []
+		},
+		"t_landingPage_title": {
+			"locators": [],
+			"attributes": []
+        },
+		"img_landingPage_image": {
+			"locators": [],
+			"attributes": []
+        },
+		"btn_landingPage_scheduleNewAppt": {
+			"locators": [],
+			"attributes": []
+        },
+		"btn_landingPage_createAccount": {
+            "locators": [],
+			"attributes": []
+        },
+		"btn_landingPage_logIn": {
+            "locators": [],
+			"attributes": []
+        },
+		"btn_landingPage_loginHelp": {
+            "locators": [],
+			"attributes": []
+        }
+	},
+	"startUpHelp": {
+		"btn_startUpHelp_dropdown": {
+            "locators": [],
+			"attributes": []
+        },
+		"t_startUpHelp_dropdownContent": {
+            "locators": [],
+			"attributes": []
+        }
+	}
+}

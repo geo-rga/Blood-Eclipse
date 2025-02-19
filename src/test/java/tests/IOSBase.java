@@ -10,7 +10,7 @@ import org.openqa.selenium.remote.CapabilityType;
 // Ensure that annotations always come from org.testng
 import org.testng.annotations.*;
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.android.options.UiAutomator2Options;
+import utils.TestConfig;
 
 //import org.testng.annotations.BeforeTest;
 
@@ -50,6 +50,8 @@ public class IOSBase {
 			
 			driver = new AppiumDriver(url, capabilities);
 			objects = new IOSVariableStore(driver);
+			
+			TestConfig.setPlatformName(capabilities.getCapability("platformName").toString());
 			
 			Thread.sleep(5000);
 			

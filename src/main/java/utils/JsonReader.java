@@ -11,9 +11,18 @@ public class JsonReader {
 	private static JsonObject jsonObjects;
 	
 	static {
+		
+		String jsonFile = "";
+		
+		if (TestConfig.getPlatformName().equalsIgnoreCase("Android")) {
+	        jsonFile = "androidObjects.json";
+	    } else if (TestConfig.getPlatformName().equalsIgnoreCase("iOS")) {
+	    	jsonFile = "iosObjects.json";
+	    }
+		
 		try { 
 			InputStreamReader reader = new InputStreamReader(
-                    JsonReader.class.getClassLoader().getResourceAsStream("androidObjects.json")
+                    JsonReader.class.getClassLoader().getResourceAsStream(jsonFile)
             );
             jsonObjects = JsonParser.parseReader(reader).getAsJsonObject();
 		} catch (Exception e) {
