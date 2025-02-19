@@ -11,6 +11,7 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.testng.annotations.*;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
+import utils.TestConfig;
 import io.appium.java_client.InteractsWithApps;
 
 public class AndroidBase {
@@ -45,6 +46,8 @@ public class AndroidBase {
 			driver = new AppiumDriver(url, capabilities);
 			objects = new AndroidVariableStore(driver);
 			
+			TestConfig.setPlatformName(capabilities.getCapability("platformName").toString());
+			
 			Thread.sleep(5000);
 		
 			
@@ -59,30 +62,6 @@ public class AndroidBase {
 	@AfterMethod
 	public void afterMethod() {
 		driver.quit();
-	}
-	
-	boolean validateDisplayed(By loc) {
-		String obj = loc.toString();
-		try {
-			WebElement el = driver.findElement(loc);
-			System.out.println("Element "+obj+" displayed (expected)");
-			return el.isDisplayed();
-		} catch (NoSuchElementException e) {
-			System.out.println("Element "+obj+" not displayed (fail)");
-			return false;
-		}
-	}
-	
-	boolean validateNotDisplayed(By loc) {
-		String obj = loc.toString();
-		try {
-			WebElement el = driver.findElement(loc);
-			System.out.println("Element "+obj+" displayed (fail)");
-			return !el.isDisplayed();
-		} catch (NoSuchElementException e) {
-			System.out.println("Element "+obj+" not displayed (expected)");
-			return true;
-		}
 	}
 
 	
