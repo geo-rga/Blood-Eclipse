@@ -17,20 +17,25 @@ public class JsonReader {
 		
 		String jsonFile = "";
 		
-		if (TestConfig.getPlatformName().equalsIgnoreCase("Android")) {
-	        jsonFile = "androidObjects.json";
-	    } else if (TestConfig.getPlatformName().equalsIgnoreCase("iOS")) {
-	    	jsonFile = "iosObjects.json";
-	    }
+//		try {
+//			if (TestConfig.getPlatformName().equalsIgnoreCase("Android")) {
+//		        jsonFile = "androidObjects.json";
+//		    } else if (TestConfig.getPlatformName().equalsIgnoreCase("iOS")) {
+//		    	jsonFile = "iosObjects.json";
+//		    } 
+//		} catch (Exception e) {
+//			throw new RuntimeException("Failed to get platform from Capabilities");	
+//		}
 		
 		try { 
 			InputStreamReader reader = new InputStreamReader(
-                    JsonReader.class.getClassLoader().getResourceAsStream(jsonFile)
+//                    JsonReader.class.getClassLoader().getResourceAsStream("androidObjects.json")
+                    JsonReader.class.getClassLoader().getResourceAsStream("iosObjects.json")
             );
             jsonObjects = JsonParser.parseReader(reader).getAsJsonObject();
 		} catch (Exception e) {
             e.printStackTrace();
-            throw new RuntimeException("Failed to read androidObjects.json");	
+            throw new RuntimeException("Failed to read objects JSON file");	
 		}
 	}
 	

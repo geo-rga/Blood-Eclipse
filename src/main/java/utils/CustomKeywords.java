@@ -3,13 +3,21 @@ package utils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
+
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 public class CustomKeywords {
 	
-	static AppiumDriver driver;
+	private final AppiumDriver driver;
 	
-	public static boolean validateDisplayed(By loc) {
+	
+	public CustomKeywords(AppiumDriver driver) {
+		this.driver = driver;
+	}
+	
+	public final static boolean validateDisplayed(By loc) {
 		String obj = loc.toString();
 		try {
 			WebElement el = driver.findElement(loc);
@@ -21,7 +29,7 @@ public class CustomKeywords {
 		}
 	}
 	
-	public static boolean validateNotDisplayed(By loc) {
+	public final static boolean validateNotDisplayed(By loc) {
 		String obj = loc.toString();
 		try {
 			WebElement el = driver.findElement(loc);

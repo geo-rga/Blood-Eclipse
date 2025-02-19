@@ -46,7 +46,7 @@ public class AndroidBase {
 			driver = new AppiumDriver(url, capabilities);
 			objects = new AndroidVariableStore(driver);
 			
-			TestConfig.setPlatformName(capabilities.getCapability("platformName").toString());
+			TestConfig.setPlatformName(capabilities.getCapability(CapabilityType.PLATFORM_NAME).toString());
 			
 			Thread.sleep(5000);
 		
@@ -61,8 +61,32 @@ public class AndroidBase {
 
 	@AfterMethod
 	public void afterMethod() {
+		System.out.println("\n\n -------- END OF TEST -------- \n\n");
 		driver.quit();
 	}
 
+	boolean validateDisplayed(By loc) {
+		String obj = loc.toString();
+		try {
+			WebElement el = driver.findElement(loc);
+			System.out.println("Element "+obj+" displayed (expected)");
+			return el.isDisplayed();
+		} catch (NoSuchElementException e) {
+			System.out.println("Element "+obj+" not displayed (fail)");
+			return false;
+		}
+	}
+	
+	boolean validateNotDisplayed(By loc) {
+		String obj = loc.toString();
+		try {
+			WebElement el = driver.findElement(loc);
+			System.out.println("Element "+obj+" displayed (fail)");
+			return !el.isDisplayed();
+		} catch (NoSuchElementException e) {
+			System.out.println("Element "+obj+" not displayed (expected)");
+			return true;
+		}
+	}
 	
 }

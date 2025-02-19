@@ -51,7 +51,7 @@ public class IOSBase {
 			driver = new AppiumDriver(url, capabilities);
 			objects = new IOSVariableStore(driver);
 			
-			TestConfig.setPlatformName(capabilities.getCapability("platformName").toString());
+			TestConfig.setPlatformName(capabilities.getCapability(CapabilityType.PLATFORM_NAME).toString());
 			
 			Thread.sleep(5000);
 			
@@ -64,6 +64,7 @@ public class IOSBase {
 	
 	@AfterMethod
 	public void afterMethod() {
+		System.out.println("\n\n -------- END OF TEST -------- \n\n");
 		driver.quit();
 	}
 	

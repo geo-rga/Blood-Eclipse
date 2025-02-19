@@ -2,6 +2,8 @@ package tests;
 
 import org.testng.annotations.*;
 
+import utils.CustomKeywords;
+
 public class DemoTests_IOS extends IOSBase {
 	@Test
 	public void iOS_AppLaunch_DefaultDisplay_7465() throws InterruptedException {
@@ -18,14 +20,19 @@ public class DemoTests_IOS extends IOSBase {
 	
 	@Test
 	public void iOS_AppLaunch_StartUpHelp_7469() throws InterruptedException {
-		objects.btn_landingPage_loginHelp().click();
+		driver.findElement(objects.btn_landingPage_loginHelp_locator).click();
+		System.out.println("1. findElement(objects.btn_landingPage_loginHelp_locator).click()");
 		Thread.sleep(2000);
-		objects.btn_startUpHelp_dropdown().click();
+		driver.findElement(objects.btn_startUpHelp_dropdown_locator).click();
+		System.out.println("2. findElement(objects.btn_startUpHelp_dropdown_locator).click()");
 		Thread.sleep(2000);
 		assert validateDisplayed(objects.t_startUpHelp_dropdownContent_locator);
-		objects.btn_startUpHelp_dropdown().click();
+		System.out.println("3. validateDisplayed(objects.t_startUpHelp_dropdownContent_locator)");
+		driver.findElement(objects.btn_startUpHelp_dropdown_locator).click();
+		System.out.println("4. findElement(objects.btn_startUpHelp_dropdown_locator).click()");
 		Thread.sleep(2000);
 		assert validateNotDisplayed(objects.t_startUpHelp_dropdownContent_locator);
+		System.out.println("5. validateNotDisplayed(objects.t_startUpHelp_dropdownContent_locator)");
 	
 	}
 	
