@@ -22,24 +22,35 @@ public class AndroidVariableStore {
 	
 	// Locators
 	public final By img_landingPage_arcLogo_locator = JsonReader.getLocator("landingPage", "img_landingPage_arcLogo");
-//	public final By img_landingPage_arcLogo_locator = By.id("com.cube.arc.blood:id/arc_logo");
-	public final By t_landingPage_title_locator = By.id("com.cube.arc.blood:id/app_title");
-	public final By img_landingPage_image_locator = By.id("com.cube.arc.blood:id/story_image");
-	public final By btn_landingPage_scheduleNewAppt_locator = By.id("com.cube.arc.blood:id/schedule");
-	public final By btn_landingPage_createAccount_locator = By.id("com.cube.arc.blood:id/sign_up");
-	public final By btn_landingPage_logIn_locator = By.id("com.cube.arc.blood:id/log_in");
-	public final By btn_landingPage_loginHelp_locator = By.id("com.cube.arc.blood:id/learn_more");
-	public final By btn_startUpHelp_dropdown_locator = By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.RelativeLayout/android.widget.ImageView");
-	public final By t_startUpHelp_dropdownContent_locator = By.id("com.cube.arc.blood:id/description");
+	public final By t_landingPage_title_locator = JsonReader.getLocator("landingPage", "t_landingPage_title");
+	public final By img_landingPage_image_locator = JsonReader.getLocator("landingPage", "img_landingPage_image");
+	public final By btn_landingPage_scheduleNewAppt_locator = JsonReader.getLocator("landingPage", "btn_landingPage_scheduleNewAppt");
+	public final By btn_landingPage_createAccount_locator = JsonReader.getLocator("landingPage", "btn_landingPage_createAccount");
+	public final By btn_landingPage_logIn_locator = JsonReader.getLocator("landingPage", "btn_landingPage_logIn");
+	public final By btn_landingPage_loginHelp_locator = JsonReader.getLocator("landingPage", "btn_landingPage_loginHelp");
+	public final By btn_startUpHelp_dropdown_locator = JsonReader.getLocator("startUpHelp", "btn_startUpHelp_dropdown");
+	public final By t_startUpHelp_dropdownContent_locator = JsonReader.getLocator("startUpHelp", "t_startUpHelp_dropdownContent");
 	
-	// Elements
-	public WebElement img_landingPage_arcLogo() { return driver.findElement(img_landingPage_arcLogo_locator);}
-	public WebElement t_landingPage_title() { return driver.findElement(t_landingPage_title_locator);}
-	public WebElement img_landingPage_image() { return driver.findElement(img_landingPage_image_locator);}
-	public WebElement btn_landingPage_scheduleNewAppt() { return driver.findElement(btn_landingPage_scheduleNewAppt_locator);}
-	public WebElement btn_landingPage_createAccount() { return driver.findElement(btn_landingPage_createAccount_locator);}
-	public WebElement btn_landingPage_logIn() { return driver.findElement(btn_landingPage_logIn_locator);}
-	public WebElement btn_landingPage_loginHelp() { return driver.findElement(btn_landingPage_loginHelp_locator);}
-	public WebElement btn_startUpHelp_dropdown() { return driver.findElement(btn_startUpHelp_dropdown_locator);}
-	public WebElement t_startUpHelp_dropdownContent() { return driver.findElement(t_startUpHelp_dropdownContent_locator);}
+	
+	// Old locators (leaving as example)
+//	public final By img_landingPage_arcLogo_locator = By.id("com.cube.arc.blood:id/arc_logo");
+//	public final By t_landingPage_title_locator = By.id("com.cube.arc.blood:id/app_title");
+//	public final By img_landingPage_image_locator = By.id("com.cube.arc.blood:id/story_image");
+//	public final By btn_landingPage_scheduleNewAppt_locator = By.id("com.cube.arc.blood:id/schedule");
+//	public final By btn_landingPage_createAccount_locator = By.id("com.cube.arc.blood:id/sign_up");
+//	public final By btn_landingPage_logIn_locator = By.id("com.cube.arc.blood:id/log_in");
+//	public final By btn_landingPage_loginHelp_locator = By.id("com.cube.arc.blood:id/learn_more");
+//	public final By btn_startUpHelp_dropdown_locator = By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.RelativeLayout/android.widget.ImageView");
+//	public final By t_startUpHelp_dropdownContent_locator = By.id("com.cube.arc.blood:id/description");
+	
+	// Elements (leaving as example)
+//	public WebElement img_landingPage_arcLogo() { return driver.findElement(img_landingPage_arcLogo_locator);}
+//	public WebElement t_landingPage_title() { return driver.findElement(t_landingPage_title_locator);}
+//	public WebElement img_landingPage_image() { return driver.findElement(img_landingPage_image_locator);}
+//	public WebElement btn_landingPage_scheduleNewAppt() { return driver.findElement(btn_landingPage_scheduleNewAppt_locator);}
+//	public WebElement btn_landingPage_createAccount() { return driver.findElement(btn_landingPage_createAccount_locator);}
+//	public WebElement btn_landingPage_logIn() { return driver.findElement(btn_landingPage_logIn_locator);}
+//	public WebElement btn_landingPage_loginHelp() { return driver.findElement(btn_landingPage_loginHelp_locator);}
+//	public WebElement btn_startUpHelp_dropdown() { return driver.findElement(btn_startUpHelp_dropdown_locator);}
+//	public WebElement t_startUpHelp_dropdownContent() { return driver.findElement(t_startUpHelp_dropdownContent_locator);}
 }
