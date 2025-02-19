@@ -8,7 +8,6 @@ public class DemoTests extends AndroidBase {
 	
 	@Test
 	public void android_AppLaunch_DefaultDisplay_7465() throws InterruptedException {
-		
 		assert validateDisplayed(objects.img_landingPage_arcLogo_locator);
 		assert validateDisplayed(objects.t_landingPage_title_locator);
 		assert validateDisplayed(objects.img_landingPage_image_locator);

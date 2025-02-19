@@ -28,6 +28,7 @@ public class DemoTests_IOS extends IOSBase {
 		Thread.sleep(2000);
 		assert validateDisplayed(objects.t_startUpHelp_dropdownContent_locator);
 		System.out.println("3. validateDisplayed(objects.t_startUpHelp_dropdownContent_locator)");
+		Thread.sleep(2000);
 		driver.findElement(objects.btn_startUpHelp_dropdown_locator).click();
 		System.out.println("4. findElement(objects.btn_startUpHelp_dropdown_locator).click()");
 		Thread.sleep(2000);

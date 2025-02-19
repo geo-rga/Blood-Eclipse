@@ -15,22 +15,25 @@ public class JsonReader {
 	
 	static {
 		
-		String jsonFile = "";
-		
+//		String jsonFile = "";
+//		
 //		try {
-//			if (TestConfig.getPlatformName().equalsIgnoreCase("Android")) {
+//			if (TestConfig.getPlatformName().equalsIgnoreCase("ANDROID")) {
 //		        jsonFile = "androidObjects.json";
-//		    } else if (TestConfig.getPlatformName().equalsIgnoreCase("iOS")) {
+//		    } else if (TestConfig.getPlatformName().equalsIgnoreCase("IOS")) {
 //		    	jsonFile = "iosObjects.json";
 //		    } 
 //		} catch (Exception e) {
 //			throw new RuntimeException("Failed to get platform from Capabilities");	
 //		}
+//		
+		
 		
 		try { 
 			InputStreamReader reader = new InputStreamReader(
 //                    JsonReader.class.getClassLoader().getResourceAsStream("androidObjects.json")
                     JsonReader.class.getClassLoader().getResourceAsStream("iosObjects.json")
+//                    JsonReader.class.getClassLoader().getResourceAsStream(jsonFile)
             );
             jsonObjects = JsonParser.parseReader(reader).getAsJsonObject();
 		} catch (Exception e) {

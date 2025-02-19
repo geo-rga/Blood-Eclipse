@@ -19,6 +19,7 @@ public class AndroidBase {
 //	RemoteWebDriver driver;
 	AppiumDriver driver;
 	public AndroidVariableStore objects;
+
 	
 	@BeforeMethod
 	public void setup() {	
@@ -45,8 +46,6 @@ public class AndroidBase {
 			
 			driver = new AppiumDriver(url, capabilities);
 			objects = new AndroidVariableStore(driver);
-			
-			TestConfig.setPlatformName(capabilities.getCapability(CapabilityType.PLATFORM_NAME).toString());
 			
 			Thread.sleep(5000);
 		

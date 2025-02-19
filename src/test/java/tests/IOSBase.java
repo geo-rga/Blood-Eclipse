@@ -51,8 +51,6 @@ public class IOSBase {
 			driver = new AppiumDriver(url, capabilities);
 			objects = new IOSVariableStore(driver);
 			
-			TestConfig.setPlatformName(capabilities.getCapability(CapabilityType.PLATFORM_NAME).toString());
-			
 			Thread.sleep(5000);
 			
 		} catch (Exception e) {
