@@ -18,9 +18,9 @@ public class JsonReader {
 		String jsonFile = "";
 
 		try {			
-			if (GlobalConfig.getPlatformName().equalsIgnoreCase("ANDROID")) {
+			if (System.getProperty("platform").equalsIgnoreCase("ANDROID")) {
 		        jsonFile = "androidObjects.json";
-		    } else if (GlobalConfig.getPlatformName().equalsIgnoreCase("IOS")) {
+		    } else if (System.getProperty("platform").equalsIgnoreCase("IOS")) {
 		    	jsonFile = "iosObjects.json";
 		    } 
 		} catch (Exception e) {

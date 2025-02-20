@@ -52,8 +52,6 @@ public class InitClass {
 
 			URL url = new URL("http://127.0.0.1:4723/");
 			
-			GlobalConfig.setPlatformName(configPlatform);
-			
 			driver = new AppiumDriver(url, capabilities);
 			objects = new ObjectStore(driver);
 			CustomKeywords = new CustomKeywords(driver);
