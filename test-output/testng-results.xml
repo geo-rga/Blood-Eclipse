@@ -2,36 +2,36 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-19T17:27:40 GMT" name="Default suite" finished-at="2025-02-19T17:28:10 GMT" duration-ms="29994">
+  <suite started-at="2025-02-19T17:36:01 GMT" name="Default suite" finished-at="2025-02-19T17:36:50 GMT" duration-ms="48886">
     <groups>
     </groups>
-    <test started-at="2025-02-19T17:27:40 GMT" name="Default test" finished-at="2025-02-19T17:28:10 GMT" duration-ms="29994">
-      <class name="tests.DemoTests_Android">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.DemoTests_Android@4c12331b]" started-at="2025-02-19T17:27:40 GMT" name="setup" finished-at="2025-02-19T17:27:51 GMT" duration-ms="10985" status="PASS">
+    <test started-at="2025-02-19T17:36:01 GMT" name="Default test" finished-at="2025-02-19T17:36:50 GMT" duration-ms="48886">
+      <class name="tests.DemoTests_IOS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.DemoTests_IOS@4c12331b]" started-at="2025-02-19T17:36:01 GMT" name="setup" finished-at="2025-02-19T17:36:17 GMT" duration-ms="15853" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="android_AppLaunch_DefaultDisplay_7465()[pri:0, instance:tests.DemoTests_Android@4c12331b]" started-at="2025-02-19T17:27:51 GMT" name="android_AppLaunch_DefaultDisplay_7465" finished-at="2025-02-19T17:27:51 GMT" duration-ms="437" status="PASS">
+        <test-method signature="iOS_AppLaunch_DefaultDisplay_7465()[pri:0, instance:tests.DemoTests_IOS@4c12331b]" started-at="2025-02-19T17:36:17 GMT" name="iOS_AppLaunch_DefaultDisplay_7465" finished-at="2025-02-19T17:36:19 GMT" duration-ms="2616" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- android_AppLaunch_DefaultDisplay_7465 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.DemoTests_Android@4c12331b]" started-at="2025-02-19T17:27:51 GMT" name="afterMethod" finished-at="2025-02-19T17:27:51 GMT" duration-ms="319" status="PASS">
+        </test-method> <!-- iOS_AppLaunch_DefaultDisplay_7465 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.DemoTests_IOS@4c12331b]" started-at="2025-02-19T17:36:19 GMT" name="afterMethod" finished-at="2025-02-19T17:36:21 GMT" duration-ms="1035" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.DemoTests_Android@4c12331b]" started-at="2025-02-19T17:27:51 GMT" name="setup" finished-at="2025-02-19T17:28:01 GMT" duration-ms="9592" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.DemoTests_IOS@4c12331b]" started-at="2025-02-19T17:36:21 GMT" name="setup" finished-at="2025-02-19T17:36:35 GMT" duration-ms="14356" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="android_AppLaunch_StartUpHelp_7469()[pri:0, instance:tests.DemoTests_Android@4c12331b]" started-at="2025-02-19T17:28:01 GMT" name="android_AppLaunch_StartUpHelp_7469" finished-at="2025-02-19T17:28:09 GMT" duration-ms="8319" status="PASS">
+        <test-method signature="iOS_AppLaunch_StartUpHelp_7469()[pri:0, instance:tests.DemoTests_IOS@4c12331b]" started-at="2025-02-19T17:36:35 GMT" name="iOS_AppLaunch_StartUpHelp_7469" finished-at="2025-02-19T17:36:49 GMT" duration-ms="13945" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- android_AppLaunch_StartUpHelp_7469 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.DemoTests_Android@4c12331b]" started-at="2025-02-19T17:28:09 GMT" name="afterMethod" finished-at="2025-02-19T17:28:10 GMT" duration-ms="296" status="PASS">
+        </test-method> <!-- iOS_AppLaunch_StartUpHelp_7469 -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.DemoTests_IOS@4c12331b]" started-at="2025-02-19T17:36:49 GMT" name="afterMethod" finished-at="2025-02-19T17:36:50 GMT" duration-ms="1036" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- tests.DemoTests_Android -->
+      </class> <!-- tests.DemoTests_IOS -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

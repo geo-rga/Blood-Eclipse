@@ -15,9 +15,7 @@ import utils.TestConfig;
 public class InitClass {
 	
 	AppiumDriver driver;
-	public AndroidVariableStore androidObjects;
-	public IOSVariableStore iosObjects;
-	protected static String platformName;
+	public VariableStore objects;
 	
 	@BeforeMethod
 	public void androidBeforeMethod() {	
@@ -37,11 +35,11 @@ public class InitClass {
 			
 			URL url = new URL("http://127.0.0.1:4723/");
 			
-			driver = new AppiumDriver(url, capabilities);
-			androidObjects = new AndroidVariableStore(driver);
-			
-			platformName = capabilities.getCapability("platformName").toString();
+			String platformName = capabilities.getCapability("platformName").toString();
 			TestConfig.setPlatformName(platformName);
+			
+			driver = new AppiumDriver(url, capabilities);
+			objects = new VariableStore(driver);
 			
 			Thread.sleep(5000);
 		
@@ -81,11 +79,11 @@ public class InitClass {
 
 			URL url = new URL("http://127.0.0.1:4723/");
 			
-			driver = new AppiumDriver(url, capabilities);
-			iosObjects = new IOSVariableStore(driver);
-			
-			platformName = capabilities.getCapability("platformName").toString();
+			String platformName = capabilities.getCapability("platformName").toString();
 			TestConfig.setPlatformName(platformName);
+			
+			driver = new AppiumDriver(url, capabilities);
+			objects = new VariableStore(driver);
 			
 			Thread.sleep(5000);
 			
@@ -124,11 +122,6 @@ public class InitClass {
 			System.out.println("Element "+obj+" not displayed (expected)");
 			return true;
 		}
-	}
-	
-	String platform() {
-		return platformName;
-		
 	}
 
 }
