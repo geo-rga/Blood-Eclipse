@@ -20,9 +20,7 @@ public class InitClass {
 	public void beforeMethod() {
 		try {
 			String configPlatform = System.getProperty("platform");
-			System.out.println("Config platform: " + configPlatform);
-			
-			System.out.println(System.getProperty("env"));
+			System.out.println("Execution target platform: " + configPlatform);
 			
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 			
@@ -54,12 +52,13 @@ public class InitClass {
 
 			URL url = new URL("http://127.0.0.1:4723/");
 			
-			String platformName = capabilities.getCapability("platformName").toString();
-			GlobalConfig.setPlatformName(platformName);
+			GlobalConfig.setPlatformName(configPlatform);
 			
 			driver = new AppiumDriver(url, capabilities);
 			objects = new ObjectStore(driver);
 			CustomKeywords = new CustomKeywords(driver);
+			
+			System.out.println("\n -------- START OF TEST -------- \n");
 						
 			Thread.sleep(5000);
 			

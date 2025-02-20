@@ -5,11 +5,11 @@ public class GlobalConfig {
 
     public static void setPlatformName(String platform) {
         platformName = platform;
-        System.out.println("Platform set to "+platformName);
+        System.out.println("Global variable platformName set to "+platformName);
     }
 
     public static String getPlatformName() {
-    	System.out.println("Running test on "+platformName+" device");
+//    	System.out.println("Running test on "+platformName+" device");
         return platformName;
     }
 
