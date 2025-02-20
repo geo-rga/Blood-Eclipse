@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 
 import java.io.InputStreamReader;
 
+@SuppressWarnings("deprecation")
 public class JsonReader {
 	private static JsonObject jsonObjects;
 	
@@ -58,7 +59,7 @@ public class JsonReader {
         return getBy(type, value);
     }
 
-    private static By getBy(String type, String value) {
+	private static By getBy(String type, String value) {
         return switch (type.toLowerCase()) {
             case "xpath" -> By.xpath(value);
             case "css" -> By.cssSelector(value);

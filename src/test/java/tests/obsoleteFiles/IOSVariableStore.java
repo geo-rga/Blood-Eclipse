@@ -1,4 +1,4 @@
-package tests;
+package tests.obsoleteFiles;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;

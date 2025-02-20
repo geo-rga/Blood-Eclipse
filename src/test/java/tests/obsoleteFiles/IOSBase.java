@@ -1,4 +1,4 @@
-package tests;
+package tests.obsoleteFiles;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.URL;

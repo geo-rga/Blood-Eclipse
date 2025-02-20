@@ -1,4 +1,4 @@
-package tests;
+package tests.obsoleteFiles;
 
 import org.testng.annotations.*;
 
