@@ -10,12 +10,14 @@ import org.openqa.selenium.remote.CapabilityType;
 // Ensure that annotations always come from org.testng
 import org.testng.annotations.*;
 import io.appium.java_client.AppiumDriver;
+import utils.CustomKeywords;
 import utils.TestConfig;
 
 public class InitClass {
 	
 	AppiumDriver driver;
 	public VariableStore objects;
+	public CustomKeywords CustomKeywords;
 	
 	@BeforeMethod
 	public void beforeMethod() {
@@ -58,6 +60,7 @@ public class InitClass {
 			
 			driver = new AppiumDriver(url, capabilities);
 			objects = new VariableStore(driver);
+			CustomKeywords = new CustomKeywords(driver);
 			
 			Thread.sleep(5000);
 			
@@ -74,28 +77,28 @@ public class InitClass {
 		driver.quit();
 	}
 	
-	boolean validateDisplayed(By loc) {
-		String obj = loc.toString();
-		try {
-			WebElement el = driver.findElement(loc);
-			System.out.println("Element "+obj+" displayed (expected)");
-			return el.isDisplayed();
-		} catch (NoSuchElementException e) {
-			System.out.println("Element "+obj+" not displayed (fail)");
-			return false;
-		}
-	}
-	
-	boolean validateNotDisplayed(By loc) {
-		String obj = loc.toString();
-		try {
-			WebElement el = driver.findElement(loc);
-			System.out.println("Element "+obj+" displayed (fail)");
-			return !el.isDisplayed();
-		} catch (NoSuchElementException e) {
-			System.out.println("Element "+obj+" not displayed (expected)");
-			return true;
-		}
-	}
+//	boolean validateDisplayed(By loc) {
+//		String obj = loc.toString();
+//		try {
+//			WebElement el = driver.findElement(loc);
+//			System.out.println("Element "+obj+" displayed (expected)");
+//			return el.isDisplayed();
+//		} catch (NoSuchElementException e) {
+//			System.out.println("Element "+obj+" not displayed (fail)");
+//			return false;
+//		}
+//	}
+//	
+//	boolean validateNotDisplayed(By loc) {
+//		String obj = loc.toString();
+//		try {
+//			WebElement el = driver.findElement(loc);
+//			System.out.println("Element "+obj+" displayed (fail)");
+//			return !el.isDisplayed();
+//		} catch (NoSuchElementException e) {
+//			System.out.println("Element "+obj+" not displayed (expected)");
+//			return true;
+//		}
+//	}
 
 }

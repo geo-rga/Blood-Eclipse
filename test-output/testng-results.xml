@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-20T08:59:38 GMT" name="Default suite" finished-at="2025-02-20T09:00:28 GMT" duration-ms="50319">
+  <suite started-at="2025-02-20T09:14:36 GMT" name="Default suite" finished-at="2025-02-20T09:15:26 GMT" duration-ms="49270">
     <groups>
     </groups>
-    <test started-at="2025-02-20T08:59:38 GMT" name="Default test" finished-at="2025-02-20T09:00:28 GMT" duration-ms="50319">
+    <test started-at="2025-02-20T09:14:36 GMT" name="Default test" finished-at="2025-02-20T09:15:26 GMT" duration-ms="49270">
       <class name="tests.DemoTests">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.DemoTests@4c12331b]" started-at="2025-02-20T08:59:38 GMT" name="beforeMethod" finished-at="2025-02-20T08:59:55 GMT" duration-ms="16833" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.DemoTests@40a4337a]" started-at="2025-02-20T09:14:36 GMT" name="beforeMethod" finished-at="2025-02-20T09:14:53 GMT" duration-ms="16086" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="AppLaunch_DefaultDisplay_7465()[pri:0, instance:tests.DemoTests@4c12331b]" started-at="2025-02-20T08:59:55 GMT" name="AppLaunch_DefaultDisplay_7465" finished-at="2025-02-20T08:59:57 GMT" duration-ms="2437" status="PASS">
+        <test-method signature="AppLaunch_DefaultDisplay_7465()[pri:0, instance:tests.DemoTests@40a4337a]" started-at="2025-02-20T09:14:53 GMT" name="AppLaunch_DefaultDisplay_7465" finished-at="2025-02-20T09:14:55 GMT" duration-ms="2465" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AppLaunch_DefaultDisplay_7465 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.DemoTests@4c12331b]" started-at="2025-02-20T08:59:57 GMT" name="afterMethod" finished-at="2025-02-20T08:59:58 GMT" duration-ms="1120" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.DemoTests@40a4337a]" started-at="2025-02-20T09:14:55 GMT" name="afterMethod" finished-at="2025-02-20T09:14:56 GMT" duration-ms="1049" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.DemoTests@4c12331b]" started-at="2025-02-20T08:59:58 GMT" name="beforeMethod" finished-at="2025-02-20T09:00:13 GMT" duration-ms="14892" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.DemoTests@40a4337a]" started-at="2025-02-20T09:14:56 GMT" name="beforeMethod" finished-at="2025-02-20T09:15:11 GMT" duration-ms="14795" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="AppLaunch_StartUpHelp_7469()[pri:0, instance:tests.DemoTests@4c12331b]" started-at="2025-02-20T09:00:13 GMT" name="AppLaunch_StartUpHelp_7469" finished-at="2025-02-20T09:00:27 GMT" duration-ms="13960" status="PASS">
+        <test-method signature="AppLaunch_StartUpHelp_7469()[pri:0, instance:tests.DemoTests@40a4337a]" started-at="2025-02-20T09:15:11 GMT" name="AppLaunch_StartUpHelp_7469" finished-at="2025-02-20T09:15:25 GMT" duration-ms="13797" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AppLaunch_StartUpHelp_7469 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.DemoTests@4c12331b]" started-at="2025-02-20T09:00:27 GMT" name="afterMethod" finished-at="2025-02-20T09:00:28 GMT" duration-ms="1031" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.DemoTests@40a4337a]" started-at="2025-02-20T09:15:25 GMT" name="afterMethod" finished-at="2025-02-20T09:15:26 GMT" duration-ms="1033" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
