@@ -29,9 +29,15 @@ public class DemoTests extends InitClass {
 	}
 	
 	@Test
-	public void Login_DefaultDisplay_7521() throws InterruptedException {
+	public void Login_ValidInputs_7522() throws InterruptedException {
 		driver.findElement(objects.btn_landingPage_logIn_locator).click();
 		Thread.sleep(2000);
+		driver.findElement(objects.i_loginScreen_usernameField_locator).sendKeys("DSUBATIS");
+		driver.findElement(objects.i_loginScreen_passwordField_locator).sendKeys("Redcross1");
+		Thread.sleep(2000);
+		driver.findElement(objects.btn_loginScreen_continue_locator).click();
+		Thread.sleep(7000);
+		assert CustomKeywords.validateNotDisplayed(objects.t_loginScreen_welcomeBackTitle_locator);
 		
 	}
 	

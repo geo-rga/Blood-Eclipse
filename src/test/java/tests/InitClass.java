@@ -2,6 +2,7 @@ package tests;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.remote.CapabilityType;
 // Ensure that annotations always come from org.testng
@@ -58,7 +59,7 @@ public class InitClass {
 			driver = new AppiumDriver(url, capabilities);
 			objects = new ObjectStore(driver);
 			CustomKeywords = new CustomKeywords(driver);
-			
+						
 			Thread.sleep(5000);
 			
 		} catch (Exception e) {
