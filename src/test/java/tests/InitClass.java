@@ -2,7 +2,6 @@ package tests;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.URL;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.remote.CapabilityType;
 // Ensure that annotations always come from org.testng
@@ -23,10 +22,12 @@ public class InitClass {
 			String configPlatform = System.getProperty("platform");
 			System.out.println("Config platform: " + configPlatform);
 			
+			System.out.println(System.getProperty("env"));
+			
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 			
 			if(configPlatform.equalsIgnoreCase("Android")) {
-				String appPath = System.getProperty("user.dir")+"/src/test/resources/apps/BloodStaging1957.apk";
+				String appPath = System.getProperty("user.dir")+"/src/test/resources/apps/BloodStaging1947.apk";
 				capabilities.setCapability(CapabilityType.PLATFORM_NAME, "Android");
 				capabilities.setCapability("appium:platformVersion", "15");
 				capabilities.setCapability("appium:deviceName", "Pixel 7");

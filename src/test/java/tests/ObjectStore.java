@@ -36,8 +36,14 @@ public class ObjectStore {
 	public final By t_loginScreen_welcomeBackTitle_locator = JsonReader.getLocator("loginScreen", "t_loginScreen_welcomeBackTitle");
 	public final By i_loginScreen_usernameField_locator = JsonReader.getLocator("loginScreen", "i_loginScreen_usernameField");
 	public final By i_loginScreen_passwordField_locator = JsonReader.getLocator("loginScreen", "i_loginScreen_passwordField");
-	public final By btn_loginScreen_passwordShowHide_locator = JsonReader.getLocator("loginScreen", "btn_loginScreen_passwordShowHide");
 	public final By btn_loginScreen_continue_locator = JsonReader.getLocator("loginScreen", "btn_loginScreen_continue");
 	public final By btn_loginScreen_forgotDetails_locator = JsonReader.getLocator("loginScreen", "btn_loginScreen_forgotDetails");
+	
+	// Biometric Screen
+	public final By t_biometricPermissions_permissionsTitle_locator = JsonReader.getLocator("biometricPermissions", "t_biometricPermissions_permissionsTitle");
+	public final By t_biometricPermissions_bulletOne_locator = JsonReader.getLocator("biometricPermissions", "t_biometricPermissions_bulletOne");
+	public final By t_biometricPermissions_bulletTwo_locator = JsonReader.getLocator("biometricPermissions", "t_biometricPermissions_bulletTwo");
+	public final By btn_biometricPermissions_enable_locator = JsonReader.getLocator("biometricPermissions", "btn_biometricPermissions_enable");
+	public final By btn_biometricPermissions_notNow_locator = JsonReader.getLocator("biometricPermissions", "btn_biometricPermissions_notNow");
 	
 }

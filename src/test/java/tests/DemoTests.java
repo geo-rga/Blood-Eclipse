@@ -36,9 +36,9 @@ public class DemoTests extends InitClass {
 		driver.findElement(objects.i_loginScreen_passwordField_locator).sendKeys("Redcross1");
 		Thread.sleep(2000);
 		driver.findElement(objects.btn_loginScreen_continue_locator).click();
-		Thread.sleep(7000);
+		Thread.sleep(8000);
 		assert CustomKeywords.validateNotDisplayed(objects.t_loginScreen_welcomeBackTitle_locator);
-		
+		assert CustomKeywords.validateDisplayed(objects.t_biometricPermissions_permissionsTitle_locator);
 	}
 	
 	

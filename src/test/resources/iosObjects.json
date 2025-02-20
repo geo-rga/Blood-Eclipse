@@ -1,103 +1,1077 @@
 {
-	"landingPage": {
-		"img_landingPage_arcLogo": {
-			"locators": [
-                {"type": "accessibility id", "value": "arcLogo"},
-                {"type": "xpath", "value": "//XCUIElementTypeImage[@name=\"arcLogo\"]"}
-            ],
-			"attributes": [{"key":"elementId","value":"28000000-0000-0000-F40A-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeImage","name":"type"},{"key":"name","value":"arcLogo","name":"name"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"false","name":"accessible"},{"key":"x","value":"124","name":"x"},{"key":"y","value":"66","name":"y"},{"key":"width","value":"127","name":"width"},{"key":"height","value":"43","name":"height"},{"key":"index","value":"0","name":"index"}]
-		},
-		"t_landingPage_title": {
-			"locators": [
-                {"type": "xpath", "value": "//XCUIElementTypeStaticText[@name=\"Blood Donor\"]"}
-            ],
-			"attributes": [{"key":"elementId","value":"1A000000-0000-0000-F40A-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeStaticText","name":"type"},{"key":"value","value":"Blood Donor","name":"value"},{"key":"name","value":"Blood Donor","name":"name"},{"key":"label","value":"Blood Donor","name":"label"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"true","name":"accessible"},{"key":"x","value":"15","name":"x"},{"key":"y","value":"115","name":"y"},{"key":"width","value":"345","name":"width"},{"key":"height","value":"50","name":"height"},{"key":"index","value":"2","name":"index"}]
-        },
-		"img_landingPage_image": {
-			"locators": [
-                {"type": "accessibility id", "value": "1599760456098_tymia"},
-                {"type": "xpath", "value": "//XCUIElementTypeImage[@name=\"1599760456098_tymia\"]"}
-            ],
-			"attributes": [{"key":"elementId","value":"1C000000-0000-0000-F40A-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeImage","name":"type"},{"key":"name","value":"1599760456098_tymia","name":"name"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"false","name":"accessible"},{"key":"x","value":"15","name":"x"},{"key":"y","value":"194","name":"y"},{"key":"width","value":"345","name":"width"},{"key":"height","value":"191","name":"height"},{"key":"index","value":"4","name":"index"}]
-        },
-		"btn_landingPage_scheduleNewAppt": {
-			"locators": [
-                {"type": "xpath", "value": "//XCUIElementTypeButton[@name=\"SCHEDULE NEW APPOINTMENT\"]"}
-            ],
-			"attributes": [{"key":"elementId","value":"20000000-0000-0000-F40A-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeButton","name":"type"},{"key":"name","value":"SCHEDULE NEW APPOINTMENT","name":"name"},{"key":"label","value":"SCHEDULE NEW APPOINTMENT","name":"label"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"true","name":"accessible"},{"key":"x","value":"15","name":"x"},{"key":"y","value":"504","name":"y"},{"key":"width","value":"345","name":"width"},{"key":"height","value":"46","name":"height"},{"key":"index","value":"8","name":"index"}]
-        },
-		"btn_landingPage_createAccount": {
+    "landingPage": {
+        "img_landingPage_arcLogo": {
             "locators": [
-                {"type": "xpath", "value": "//XCUIElementTypeButton[@name=\"CREATE ACCOUNT\"]"}
+                {
+                    "type": "accessibility id",
+                    "value": "arcLogo"
+                },
+                {
+                    "type": "xpath",
+                    "value": "//XCUIElementTypeImage[@name=\"arcLogo\"]"
+                }
             ],
-			"attributes": [{"key":"elementId","value":"22000000-0000-0000-F40A-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeButton","name":"type"},{"key":"name","value":"CREATE ACCOUNT","name":"name"},{"key":"label","value":"CREATE ACCOUNT","name":"label"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"true","name":"accessible"},{"key":"x","value":"15","name":"x"},{"key":"y","value":"559","name":"y"},{"key":"width","value":"345","name":"width"},{"key":"height","value":"46","name":"height"},{"key":"index","value":"10","name":"index"}]
+            "attributes": [
+                {
+                    "key": "elementId",
+                    "value": "28000000-0000-0000-F40A-000000000000",
+                    "name": "elementId"
+                },
+                {
+                    "key": "type",
+                    "value": "XCUIElementTypeImage",
+                    "name": "type"
+                },
+                {
+                    "key": "name",
+                    "value": "arcLogo",
+                    "name": "name"
+                },
+                {
+                    "key": "enabled",
+                    "value": "true",
+                    "name": "enabled"
+                },
+                {
+                    "key": "visible",
+                    "value": "true",
+                    "name": "visible"
+                },
+                {
+                    "key": "accessible",
+                    "value": "false",
+                    "name": "accessible"
+                },
+                {
+                    "key": "x",
+                    "value": "124",
+                    "name": "x"
+                },
+                {
+                    "key": "y",
+                    "value": "66",
+                    "name": "y"
+                },
+                {
+                    "key": "width",
+                    "value": "127",
+                    "name": "width"
+                },
+                {
+                    "key": "height",
+                    "value": "43",
+                    "name": "height"
+                },
+                {
+                    "key": "index",
+                    "value": "0",
+                    "name": "index"
+                }
+            ]
         },
-		"btn_landingPage_logIn": {
+        "t_landingPage_title": {
             "locators": [
-                {"type": "xpath", "value": "//XCUIElementTypeButton[@name=\"LOG IN\"]"}
+                {
+                    "type": "xpath",
+                    "value": "//XCUIElementTypeStaticText[@name=\"Blood Donor\"]"
+                }
             ],
-			"attributes": [{"key":"elementId","value":"24000000-0000-0000-F40A-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeButton","name":"type"},{"key":"name","value":"LOG IN","name":"name"},{"key":"label","value":"LOG IN","name":"label"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"true","name":"accessible"},{"key":"x","value":"15","name":"x"},{"key":"y","value":"614","name":"y"},{"key":"width","value":"345","name":"width"},{"key":"height","value":"46","name":"height"},{"key":"index","value":"12","name":"index"}]
+            "attributes": [
+                {
+                    "key": "elementId",
+                    "value": "1A000000-0000-0000-F40A-000000000000",
+                    "name": "elementId"
+                },
+                {
+                    "key": "type",
+                    "value": "XCUIElementTypeStaticText",
+                    "name": "type"
+                },
+                {
+                    "key": "value",
+                    "value": "Blood Donor",
+                    "name": "value"
+                },
+                {
+                    "key": "name",
+                    "value": "Blood Donor",
+                    "name": "name"
+                },
+                {
+                    "key": "label",
+                    "value": "Blood Donor",
+                    "name": "label"
+                },
+                {
+                    "key": "enabled",
+                    "value": "true",
+                    "name": "enabled"
+                },
+                {
+                    "key": "visible",
+                    "value": "true",
+                    "name": "visible"
+                },
+                {
+                    "key": "accessible",
+                    "value": "true",
+                    "name": "accessible"
+                },
+                {
+                    "key": "x",
+                    "value": "15",
+                    "name": "x"
+                },
+                {
+                    "key": "y",
+                    "value": "115",
+                    "name": "y"
+                },
+                {
+                    "key": "width",
+                    "value": "345",
+                    "name": "width"
+                },
+                {
+                    "key": "height",
+                    "value": "50",
+                    "name": "height"
+                },
+                {
+                    "key": "index",
+                    "value": "2",
+                    "name": "index"
+                }
+            ]
         },
-		"btn_landingPage_loginHelp": {
+        "img_landingPage_image": {
             "locators": [
-                {"type": "xpath", "value": "//XCUIElementTypeStaticText[@name=\"Help with Sign Up or Log In\"]"}
+                {
+                    "type": "accessibility id",
+                    "value": "1599760456098_tymia"
+                },
+                {
+                    "type": "xpath",
+                    "value": "//XCUIElementTypeImage[@name=\"1599760456098_tymia\"]"
+                }
             ],
-			"attributes": [{"key":"elementId","value":"2C000000-0000-0000-F40A-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeStaticText","name":"type"},{"key":"value","value":"Help with Sign Up or Log In","name":"value"},{"key":"name","value":"Help with Sign Up or Log In","name":"name"},{"key":"label","value":"Help with Sign Up or Log In","name":"label"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"false","name":"accessible"},{"key":"x","value":"88","name":"x"},{"key":"y","value":"739","name":"y"},{"key":"width","value":"199","name":"width"},{"key":"height","value":"19","name":"height"},{"key":"index","value":"0","name":"index"}]
+            "attributes": [
+                {
+                    "key": "elementId",
+                    "value": "1C000000-0000-0000-F40A-000000000000",
+                    "name": "elementId"
+                },
+                {
+                    "key": "type",
+                    "value": "XCUIElementTypeImage",
+                    "name": "type"
+                },
+                {
+                    "key": "name",
+                    "value": "1599760456098_tymia",
+                    "name": "name"
+                },
+                {
+                    "key": "enabled",
+                    "value": "true",
+                    "name": "enabled"
+                },
+                {
+                    "key": "visible",
+                    "value": "true",
+                    "name": "visible"
+                },
+                {
+                    "key": "accessible",
+                    "value": "false",
+                    "name": "accessible"
+                },
+                {
+                    "key": "x",
+                    "value": "15",
+                    "name": "x"
+                },
+                {
+                    "key": "y",
+                    "value": "194",
+                    "name": "y"
+                },
+                {
+                    "key": "width",
+                    "value": "345",
+                    "name": "width"
+                },
+                {
+                    "key": "height",
+                    "value": "191",
+                    "name": "height"
+                },
+                {
+                    "key": "index",
+                    "value": "4",
+                    "name": "index"
+                }
+            ]
+        },
+        "btn_landingPage_scheduleNewAppt": {
+            "locators": [
+                {
+                    "type": "xpath",
+                    "value": "//XCUIElementTypeButton[@name=\"SCHEDULE NEW APPOINTMENT\"]"
+                }
+            ],
+            "attributes": [
+                {
+                    "key": "elementId",
+                    "value": "20000000-0000-0000-F40A-000000000000",
+                    "name": "elementId"
+                },
+                {
+                    "key": "type",
+                    "value": "XCUIElementTypeButton",
+                    "name": "type"
+                },
+                {
+                    "key": "name",
+                    "value": "SCHEDULE NEW APPOINTMENT",
+                    "name": "name"
+                },
+                {
+                    "key": "label",
+                    "value": "SCHEDULE NEW APPOINTMENT",
+                    "name": "label"
+                },
+                {
+                    "key": "enabled",
+                    "value": "true",
+                    "name": "enabled"
+                },
+                {
+                    "key": "visible",
+                    "value": "true",
+                    "name": "visible"
+                },
+                {
+                    "key": "accessible",
+                    "value": "true",
+                    "name": "accessible"
+                },
+                {
+                    "key": "x",
+                    "value": "15",
+                    "name": "x"
+                },
+                {
+                    "key": "y",
+                    "value": "504",
+                    "name": "y"
+                },
+                {
+                    "key": "width",
+                    "value": "345",
+                    "name": "width"
+                },
+                {
+                    "key": "height",
+                    "value": "46",
+                    "name": "height"
+                },
+                {
+                    "key": "index",
+                    "value": "8",
+                    "name": "index"
+                }
+            ]
+        },
+        "btn_landingPage_createAccount": {
+            "locators": [
+                {
+                    "type": "xpath",
+                    "value": "//XCUIElementTypeButton[@name=\"CREATE ACCOUNT\"]"
+                }
+            ],
+            "attributes": [
+                {
+                    "key": "elementId",
+                    "value": "22000000-0000-0000-F40A-000000000000",
+                    "name": "elementId"
+                },
+                {
+                    "key": "type",
+                    "value": "XCUIElementTypeButton",
+                    "name": "type"
+                },
+                {
+                    "key": "name",
+                    "value": "CREATE ACCOUNT",
+                    "name": "name"
+                },
+                {
+                    "key": "label",
+                    "value": "CREATE ACCOUNT",
+                    "name": "label"
+                },
+                {
+                    "key": "enabled",
+                    "value": "true",
+                    "name": "enabled"
+                },
+                {
+                    "key": "visible",
+                    "value": "true",
+                    "name": "visible"
+                },
+                {
+                    "key": "accessible",
+                    "value": "true",
+                    "name": "accessible"
+                },
+                {
+                    "key": "x",
+                    "value": "15",
+                    "name": "x"
+                },
+                {
+                    "key": "y",
+                    "value": "559",
+                    "name": "y"
+                },
+                {
+                    "key": "width",
+                    "value": "345",
+                    "name": "width"
+                },
+                {
+                    "key": "height",
+                    "value": "46",
+                    "name": "height"
+                },
+                {
+                    "key": "index",
+                    "value": "10",
+                    "name": "index"
+                }
+            ]
+        },
+        "btn_landingPage_logIn": {
+            "locators": [
+                {
+                    "type": "xpath",
+                    "value": "//XCUIElementTypeButton[@name=\"LOG IN\"]"
+                }
+            ],
+            "attributes": [
+                {
+                    "key": "elementId",
+                    "value": "24000000-0000-0000-F40A-000000000000",
+                    "name": "elementId"
+                },
+                {
+                    "key": "type",
+                    "value": "XCUIElementTypeButton",
+                    "name": "type"
+                },
+                {
+                    "key": "name",
+                    "value": "LOG IN",
+                    "name": "name"
+                },
+                {
+                    "key": "label",
+                    "value": "LOG IN",
+                    "name": "label"
+                },
+                {
+                    "key": "enabled",
+                    "value": "true",
+                    "name": "enabled"
+                },
+                {
+                    "key": "visible",
+                    "value": "true",
+                    "name": "visible"
+                },
+                {
+                    "key": "accessible",
+                    "value": "true",
+                    "name": "accessible"
+                },
+                {
+                    "key": "x",
+                    "value": "15",
+                    "name": "x"
+                },
+                {
+                    "key": "y",
+                    "value": "614",
+                    "name": "y"
+                },
+                {
+                    "key": "width",
+                    "value": "345",
+                    "name": "width"
+                },
+                {
+                    "key": "height",
+                    "value": "46",
+                    "name": "height"
+                },
+                {
+                    "key": "index",
+                    "value": "12",
+                    "name": "index"
+                }
+            ]
+        },
+        "btn_landingPage_loginHelp": {
+            "locators": [
+                {
+                    "type": "xpath",
+                    "value": "//XCUIElementTypeStaticText[@name=\"Help with Sign Up or Log In\"]"
+                }
+            ],
+            "attributes": [
+                {
+                    "key": "elementId",
+                    "value": "2C000000-0000-0000-F40A-000000000000",
+                    "name": "elementId"
+                },
+                {
+                    "key": "type",
+                    "value": "XCUIElementTypeStaticText",
+                    "name": "type"
+                },
+                {
+                    "key": "value",
+                    "value": "Help with Sign Up or Log In",
+                    "name": "value"
+                },
+                {
+                    "key": "name",
+                    "value": "Help with Sign Up or Log In",
+                    "name": "name"
+                },
+                {
+                    "key": "label",
+                    "value": "Help with Sign Up or Log In",
+                    "name": "label"
+                },
+                {
+                    "key": "enabled",
+                    "value": "true",
+                    "name": "enabled"
+                },
+                {
+                    "key": "visible",
+                    "value": "true",
+                    "name": "visible"
+                },
+                {
+                    "key": "accessible",
+                    "value": "false",
+                    "name": "accessible"
+                },
+                {
+                    "key": "x",
+                    "value": "88",
+                    "name": "x"
+                },
+                {
+                    "key": "y",
+                    "value": "739",
+                    "name": "y"
+                },
+                {
+                    "key": "width",
+                    "value": "199",
+                    "name": "width"
+                },
+                {
+                    "key": "height",
+                    "value": "19",
+                    "name": "height"
+                },
+                {
+                    "key": "index",
+                    "value": "0",
+                    "name": "index"
+                }
+            ]
         }
-	},
-	"startUpHelp": {
-		"btn_startUpHelp_dropdown": {
+    },
+    "startUpHelp": {
+        "btn_startUpHelp_dropdown": {
             "locators": [
-                {"type": "xpath", "value": "//XCUIElementTypeApplication[@name=\"Blood Donor\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]"}
+                {
+                    "type": "xpath",
+                    "value": "//XCUIElementTypeApplication[@name=\"Blood Donor\"]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeTable/XCUIElementTypeCell[2]"
+                }
             ],
-			"attributes": [{"key":"elementId","value":"36000000-0000-0000-F40A-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeCell","name":"type"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"true","name":"accessible"},{"key":"x","value":"0","name":"x"},{"key":"y","value":"212","name":"y"},{"key":"width","value":"375","name":"width"},{"key":"height","value":"69","name":"height"},{"key":"index","value":"4","name":"index"}]
+            "attributes": [
+                {
+                    "key": "elementId",
+                    "value": "36000000-0000-0000-F40A-000000000000",
+                    "name": "elementId"
+                },
+                {
+                    "key": "type",
+                    "value": "XCUIElementTypeCell",
+                    "name": "type"
+                },
+                {
+                    "key": "enabled",
+                    "value": "true",
+                    "name": "enabled"
+                },
+                {
+                    "key": "visible",
+                    "value": "true",
+                    "name": "visible"
+                },
+                {
+                    "key": "accessible",
+                    "value": "true",
+                    "name": "accessible"
+                },
+                {
+                    "key": "x",
+                    "value": "0",
+                    "name": "x"
+                },
+                {
+                    "key": "y",
+                    "value": "212",
+                    "name": "y"
+                },
+                {
+                    "key": "width",
+                    "value": "375",
+                    "name": "width"
+                },
+                {
+                    "key": "height",
+                    "value": "69",
+                    "name": "height"
+                },
+                {
+                    "key": "index",
+                    "value": "4",
+                    "name": "index"
+                }
+            ]
         },
-		"t_startUpHelp_dropdownContent": {
+        "t_startUpHelp_dropdownContent": {
             "locators": [
-                {"type": "xpath", "value": "//XCUIElementTypeStaticText[@name=\"If you have an existing username & password for redcrossblood.org, you should choose ‘Log in’ from the Welcome Screen, and use those same credentials to log in to the app.  If you do not have a username/password specific to redcrossblood.org, even if you’re an existing donor, you must create one by selecting ‘Sign up’ on the Welcome Screen in order to use the app.\"]"}
+                {
+                    "type": "xpath",
+                    "value": "//XCUIElementTypeStaticText[@name=\"If you have an existing username & password for redcrossblood.org, you should choose ‘Log in’ from the Welcome Screen, and use those same credentials to log in to the app.  If you do not have a username/password specific to redcrossblood.org, even if you’re an existing donor, you must create one by selecting ‘Sign up’ on the Welcome Screen in order to use the app.\"]"
+                }
             ],
-			"attributes": [{"key":"elementId","value":"5D000000-0000-0000-F40A-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeStaticText","name":"type"},{"key":"value","value":"If you have an existing username & password for redcrossblood.org, you should choose ‘Log in’ from the Welcome Screen, and use those same credentials to log in to the app.  If you do not have a username/password specific to redcrossblood.org, even if you’re an existing donor, you must create one by selecting ‘Sign up’ on the Welcome Screen in order to use the app.","name":"value"},{"key":"name","value":"If you have an existing username & password for redcrossblood.org, you should choose ‘Log in’ from the Welcome Screen, and use those same credentials to log in to the app.  If you do not have a username/password specific to redcrossblood.org, even if you’re an existing donor, you must create one by selecting ‘Sign up’ on the Welcome Screen in order to use the app.","name":"name"},{"key":"label","value":"If you have an existing username & password for redcrossblood.org, you should choose ‘Log in’ from the Welcome Screen, and use those same credentials to log in to the app.  If you do not have a username/password specific to redcrossblood.org, even if you’re an existing donor, you must create one by selecting ‘Sign up’ on the Welcome Screen in order to use the app.","name":"label"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"true","name":"accessible"},{"key":"x","value":"24","name":"x"},{"key":"y","value":"276","name":"y"},{"key":"width","value":"280","name":"width"},{"key":"height","value":"140","name":"height"},{"key":"index","value":"1","name":"index"}]
+            "attributes": [
+                {
+                    "key": "elementId",
+                    "value": "5D000000-0000-0000-F40A-000000000000",
+                    "name": "elementId"
+                },
+                {
+                    "key": "type",
+                    "value": "XCUIElementTypeStaticText",
+                    "name": "type"
+                },
+                {
+                    "key": "value",
+                    "value": "If you have an existing username & password for redcrossblood.org, you should choose ‘Log in’ from the Welcome Screen, and use those same credentials to log in to the app.  If you do not have a username/password specific to redcrossblood.org, even if you’re an existing donor, you must create one by selecting ‘Sign up’ on the Welcome Screen in order to use the app.",
+                    "name": "value"
+                },
+                {
+                    "key": "name",
+                    "value": "If you have an existing username & password for redcrossblood.org, you should choose ‘Log in’ from the Welcome Screen, and use those same credentials to log in to the app.  If you do not have a username/password specific to redcrossblood.org, even if you’re an existing donor, you must create one by selecting ‘Sign up’ on the Welcome Screen in order to use the app.",
+                    "name": "name"
+                },
+                {
+                    "key": "label",
+                    "value": "If you have an existing username & password for redcrossblood.org, you should choose ‘Log in’ from the Welcome Screen, and use those same credentials to log in to the app.  If you do not have a username/password specific to redcrossblood.org, even if you’re an existing donor, you must create one by selecting ‘Sign up’ on the Welcome Screen in order to use the app.",
+                    "name": "label"
+                },
+                {
+                    "key": "enabled",
+                    "value": "true",
+                    "name": "enabled"
+                },
+                {
+                    "key": "visible",
+                    "value": "true",
+                    "name": "visible"
+                },
+                {
+                    "key": "accessible",
+                    "value": "true",
+                    "name": "accessible"
+                },
+                {
+                    "key": "x",
+                    "value": "24",
+                    "name": "x"
+                },
+                {
+                    "key": "y",
+                    "value": "276",
+                    "name": "y"
+                },
+                {
+                    "key": "width",
+                    "value": "280",
+                    "name": "width"
+                },
+                {
+                    "key": "height",
+                    "value": "140",
+                    "name": "height"
+                },
+                {
+                    "key": "index",
+                    "value": "1",
+                    "name": "index"
+                }
+            ]
         }
-	},
-    "loginScreen":{
+    },
+    "loginScreen": {
         "t_loginScreen_welcomeBackTitle": {
             "locators": [
-                {"type": "accessibility id", "value": "Welcome back"},
-                {"type": "xpath", "value": "//XCUIElementTypeStaticText[@name=\"Welcome back\"]"}
+                {
+                    "type": "accessibility id",
+                    "value": "Welcome back"
+                },
+                {
+                    "type": "xpath",
+                    "value": "//XCUIElementTypeStaticText[@name=\"Welcome back\"]"
+                }
             ],
-            "attributes": [{"key":"elementId","value":"41000000-0000-0000-830C-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeStaticText","name":"type"},{"key":"value","value":"Welcome back","name":"value"},{"key":"name","value":"Welcome back","name":"name"},{"key":"label","value":"Welcome back","name":"label"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"true","name":"accessible"},{"key":"x","value":"113","name":"x"},{"key":"y","value":"124","name":"y"},{"key":"width","value":"149","name":"width"},{"key":"height","value":"26","name":"height"},{"key":"index","value":"0","name":"index"}]
+            "attributes": [
+                {
+                    "key": "elementId",
+                    "value": "41000000-0000-0000-830C-000000000000",
+                    "name": "elementId"
+                },
+                {
+                    "key": "type",
+                    "value": "XCUIElementTypeStaticText",
+                    "name": "type"
+                },
+                {
+                    "key": "value",
+                    "value": "Welcome back",
+                    "name": "value"
+                },
+                {
+                    "key": "name",
+                    "value": "Welcome back",
+                    "name": "name"
+                },
+                {
+                    "key": "label",
+                    "value": "Welcome back",
+                    "name": "label"
+                },
+                {
+                    "key": "enabled",
+                    "value": "true",
+                    "name": "enabled"
+                },
+                {
+                    "key": "visible",
+                    "value": "true",
+                    "name": "visible"
+                },
+                {
+                    "key": "accessible",
+                    "value": "true",
+                    "name": "accessible"
+                },
+                {
+                    "key": "x",
+                    "value": "113",
+                    "name": "x"
+                },
+                {
+                    "key": "y",
+                    "value": "124",
+                    "name": "y"
+                },
+                {
+                    "key": "width",
+                    "value": "149",
+                    "name": "width"
+                },
+                {
+                    "key": "height",
+                    "value": "26",
+                    "name": "height"
+                },
+                {
+                    "key": "index",
+                    "value": "0",
+                    "name": "index"
+                }
+            ]
         },
         "i_loginScreen_usernameField": {
             "locators": [
-                {"type": "accessibility id", "value": "Username field"},
-                {"type": "xpath", "value": "//XCUIElementTypeTextField[@name=\"Username field\"]"}
+                {
+                    "type": "accessibility id",
+                    "value": "Username field"
+                },
+                {
+                    "type": "xpath",
+                    "value": "//XCUIElementTypeTextField[@name=\"Username field\"]"
+                }
             ],
-            "attributes": [{"key":"elementId","value":"2D000000-0000-0000-830C-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeTextField","name":"type"},{"key":"value","value":"Username","name":"value"},{"key":"name","value":"Username field","name":"name"},{"key":"label","value":"Username field","name":"label"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"true","name":"accessible"},{"key":"x","value":"18","name":"x"},{"key":"y","value":"213","name":"y"},{"key":"width","value":"339","name":"width"},{"key":"height","value":"45","name":"height"},{"key":"index","value":"1","name":"index"}]
+            "attributes": [
+                {
+                    "key": "elementId",
+                    "value": "2D000000-0000-0000-830C-000000000000",
+                    "name": "elementId"
+                },
+                {
+                    "key": "type",
+                    "value": "XCUIElementTypeTextField",
+                    "name": "type"
+                },
+                {
+                    "key": "value",
+                    "value": "Username",
+                    "name": "value"
+                },
+                {
+                    "key": "name",
+                    "value": "Username field",
+                    "name": "name"
+                },
+                {
+                    "key": "label",
+                    "value": "Username field",
+                    "name": "label"
+                },
+                {
+                    "key": "enabled",
+                    "value": "true",
+                    "name": "enabled"
+                },
+                {
+                    "key": "visible",
+                    "value": "true",
+                    "name": "visible"
+                },
+                {
+                    "key": "accessible",
+                    "value": "true",
+                    "name": "accessible"
+                },
+                {
+                    "key": "x",
+                    "value": "18",
+                    "name": "x"
+                },
+                {
+                    "key": "y",
+                    "value": "213",
+                    "name": "y"
+                },
+                {
+                    "key": "width",
+                    "value": "339",
+                    "name": "width"
+                },
+                {
+                    "key": "height",
+                    "value": "45",
+                    "name": "height"
+                },
+                {
+                    "key": "index",
+                    "value": "1",
+                    "name": "index"
+                }
+            ]
         },
         "i_loginScreen_passwordField": {
             "locators": [
-                {"type": "accessibility id", "value": "Password field"},
-                {"type": "xpath", "value": "//XCUIElementTypeSecureTextField[@name=\"Password field\"]"}
+                {
+                    "type": "accessibility id",
+                    "value": "Password field"
+                },
+                {
+                    "type": "xpath",
+                    "value": "//XCUIElementTypeSecureTextField[@name=\"Password field\"]"
+                }
             ],
-            "attributes": [{"key":"elementId","value":"42000000-0000-0000-830C-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeSecureTextField","name":"type"},{"key":"value","value":"Password","name":"value"},{"key":"name","value":"Password field","name":"name"},{"key":"label","value":"Password field","name":"label"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"true","name":"accessible"},{"key":"x","value":"18","name":"x"},{"key":"y","value":"300","name":"y"},{"key":"width","value":"339","name":"width"},{"key":"height","value":"46","name":"height"},{"key":"index","value":"2","name":"index"}]
+            "attributes": [
+                {
+                    "key": "elementId",
+                    "value": "42000000-0000-0000-830C-000000000000",
+                    "name": "elementId"
+                },
+                {
+                    "key": "type",
+                    "value": "XCUIElementTypeSecureTextField",
+                    "name": "type"
+                },
+                {
+                    "key": "value",
+                    "value": "Password",
+                    "name": "value"
+                },
+                {
+                    "key": "name",
+                    "value": "Password field",
+                    "name": "name"
+                },
+                {
+                    "key": "label",
+                    "value": "Password field",
+                    "name": "label"
+                },
+                {
+                    "key": "enabled",
+                    "value": "true",
+                    "name": "enabled"
+                },
+                {
+                    "key": "visible",
+                    "value": "true",
+                    "name": "visible"
+                },
+                {
+                    "key": "accessible",
+                    "value": "true",
+                    "name": "accessible"
+                },
+                {
+                    "key": "x",
+                    "value": "18",
+                    "name": "x"
+                },
+                {
+                    "key": "y",
+                    "value": "300",
+                    "name": "y"
+                },
+                {
+                    "key": "width",
+                    "value": "339",
+                    "name": "width"
+                },
+                {
+                    "key": "height",
+                    "value": "46",
+                    "name": "height"
+                },
+                {
+                    "key": "index",
+                    "value": "2",
+                    "name": "index"
+                }
+            ]
         },
         "btn_loginScreen_continue": {
             "locators": [
-                {"type": "xpath", "value": "//XCUIElementTypeButton[@name=\"CONTINUE\"]"}
+                {
+                    "type": "xpath",
+                    "value": "//XCUIElementTypeButton[@name=\"CONTINUE\"]"
+                }
             ],
-            "attributes": [{"key":"elementId","value":"44000000-0000-0000-830C-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeButton","name":"type"},{"key":"name","value":"CONTINUE","name":"name"},{"key":"label","value":"CONTINUE","name":"label"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"true","name":"accessible"},{"key":"x","value":"18","name":"x"},{"key":"y","value":"361","name":"y"},{"key":"width","value":"339","name":"width"},{"key":"height","value":"46","name":"height"},{"key":"index","value":"4","name":"index"}]
+            "attributes": [
+                {
+                    "key": "elementId",
+                    "value": "44000000-0000-0000-830C-000000000000",
+                    "name": "elementId"
+                },
+                {
+                    "key": "type",
+                    "value": "XCUIElementTypeButton",
+                    "name": "type"
+                },
+                {
+                    "key": "name",
+                    "value": "CONTINUE",
+                    "name": "name"
+                },
+                {
+                    "key": "label",
+                    "value": "CONTINUE",
+                    "name": "label"
+                },
+                {
+                    "key": "enabled",
+                    "value": "true",
+                    "name": "enabled"
+                },
+                {
+                    "key": "visible",
+                    "value": "true",
+                    "name": "visible"
+                },
+                {
+                    "key": "accessible",
+                    "value": "true",
+                    "name": "accessible"
+                },
+                {
+                    "key": "x",
+                    "value": "18",
+                    "name": "x"
+                },
+                {
+                    "key": "y",
+                    "value": "361",
+                    "name": "y"
+                },
+                {
+                    "key": "width",
+                    "value": "339",
+                    "name": "width"
+                },
+                {
+                    "key": "height",
+                    "value": "46",
+                    "name": "height"
+                },
+                {
+                    "key": "index",
+                    "value": "4",
+                    "name": "index"
+                }
+            ]
         },
         "btn_loginScreen_forgotDetails": {
             "locators": [
-                {"type": "xpath", "value": "//XCUIElementTypeButton[@name=\"Forgot your username / password?\"]"}
+                {
+                    "type": "xpath",
+                    "value": "//XCUIElementTypeButton[@name=\"Forgot your username / password?\"]"
+                }
             ],
-            "attributes": [{"key":"elementId","value":"46000000-0000-0000-830C-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeButton","name":"type"},{"key":"name","value":"Forgot your username / password?","name":"name"},{"key":"label","value":"Forgot your username / password?","name":"label"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"true","name":"accessible"},{"key":"x","value":"63","name":"x"},{"key":"y","value":"422","name":"y"},{"key":"width","value":"248","name":"width"},{"key":"height","value":"31","name":"height"},{"key":"index","value":"6","name":"index"}]
+            "attributes": [
+                {
+                    "key": "elementId",
+                    "value": "46000000-0000-0000-830C-000000000000",
+                    "name": "elementId"
+                },
+                {
+                    "key": "type",
+                    "value": "XCUIElementTypeButton",
+                    "name": "type"
+                },
+                {
+                    "key": "name",
+                    "value": "Forgot your username / password?",
+                    "name": "name"
+                },
+                {
+                    "key": "label",
+                    "value": "Forgot your username / password?",
+                    "name": "label"
+                },
+                {
+                    "key": "enabled",
+                    "value": "true",
+                    "name": "enabled"
+                },
+                {
+                    "key": "visible",
+                    "value": "true",
+                    "name": "visible"
+                },
+                {
+                    "key": "accessible",
+                    "value": "true",
+                    "name": "accessible"
+                },
+                {
+                    "key": "x",
+                    "value": "63",
+                    "name": "x"
+                },
+                {
+                    "key": "y",
+                    "value": "422",
+                    "name": "y"
+                },
+                {
+                    "key": "width",
+                    "value": "248",
+                    "name": "width"
+                },
+                {
+                    "key": "height",
+                    "value": "31",
+                    "name": "height"
+                },
+                {
+                    "key": "index",
+                    "value": "6",
+                    "name": "index"
+                }
+            ]
+        }
+    },
+    "biometricPermissions": {
+        "t_biometricPermissions_permissionsTitle": {
+            "locators": [
+                {
+                    "type": "accessibility id",
+                    "value": "Enable permissions for biometric login"
+                },
+                {
+                    "type": "xpath",
+                    "value": "//XCUIElementTypeStaticText[@name=\"Enable permissions for biometric login\"]"
+                }
+            ],
+            "attributes":[{"key":"elementId","value":"3C000000-0000-0000-880D-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeStaticText","name":"type"},{"key":"value","value":"Enable permissions for biometric login","name":"value"},{"key":"name","value":"Enable permissions for biometric login","name":"name"},{"key":"label","value":"Enable permissions for biometric login","name":"label"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"true","name":"accessible"},{"key":"x","value":"27","name":"x"},{"key":"y","value":"292","name":"y"},{"key":"width","value":"321","name":"width"},{"key":"height","value":"118","name":"height"},{"key":"index","value":"2","name":"index"}]
+        },
+        "t_biometricPermissions_bulletOne": {
+            "locators": [
+                {
+                    "type": "accessibility id",
+                    "value": "You can use Biometrics for fast and secure access to your App."
+                },
+                {
+                    "type": "xpath",
+                    "value": "//XCUIElementTypeStaticText[@name=\"You can use Biometrics for fast and secure access to your App.\"]"
+                }
+            ],
+            "attributes":[{"key":"elementId","value":"47000000-0000-0000-880D-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeStaticText","name":"type"},{"key":"value","value":"You can use Biometrics for fast and secure access to your App.","name":"value"},{"key":"name","value":"You can use Biometrics for fast and secure access to your App.","name":"name"},{"key":"label","value":"You can use Biometrics for fast and secure access to your App.","name":"label"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"true","name":"accessible"},{"key":"x","value":"70","name":"x"},{"key":"y","value":"436","name":"y"},{"key":"width","value":"268","name":"width"},{"key":"height","value":"36","name":"height"},{"key":"index","value":"1","name":"index"}]
+        },
+        "t_biometricPermissions_bulletTwo": {
+            "locators": [
+                {
+                    "type": "accessibility id",
+                    "value": "You won't need to enter your password after setting it up."
+                },
+                {
+                    "type": "xpath",
+                    "value": "//XCUIElementTypeStaticText[@name=\"You won't need to enter your password after setting it up.\"]"
+                }
+            ],
+            "attributes":[{"key":"elementId","value":"49000000-0000-0000-880D-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeStaticText","name":"type"},{"key":"value","value":"You won't need to enter your password after setting it up.","name":"value"},{"key":"name","value":"You won't need to enter your password after setting it up.","name":"name"},{"key":"label","value":"You won't need to enter your password after setting it up.","name":"label"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"true","name":"accessible"},{"key":"x","value":"70","name":"x"},{"key":"y","value":"497","name":"y"},{"key":"width","value":"268","name":"width"},{"key":"height","value":"36","name":"height"},{"key":"index","value":"1","name":"index"}]
+        },
+        "btn_biometricPermissions_enable": {
+            "locators": [
+                {
+                    "type": "xpath",
+                    "value": "//XCUIElementTypeButton[@name=\"Enable permissions\"]"
+                }
+            ],
+            "attributes":[{"key":"elementId","value":"32000000-0000-0000-880D-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeButton","name":"type"},{"key":"name","value":"Enable permissions","name":"name"},{"key":"label","value":"Enable permissions","name":"label"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"true","name":"accessible"},{"key":"x","value":"27","name":"x"},{"key":"y","value":"662","name":"y"},{"key":"width","value":"321","name":"width"},{"key":"height","value":"46","name":"height"},{"key":"index","value":"4","name":"index"}]
+        },
+        "btn_biometricPermissions_notNow": {
+            "locators": [
+                {
+                    "type": "xpath",
+                    "value": "//XCUIElementTypeStaticText[@name=\"Not now\"]"
+                }
+            ],
+            "attributes":[{"key":"elementId","value":"39000000-0000-0000-880D-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeStaticText","name":"type"},{"key":"value","value":"Not now","name":"value"},{"key":"name","value":"Not now","name":"name"},{"key":"label","value":"Not now","name":"label"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"false","name":"accessible"},{"key":"x","value":"157","name":"x"},{"key":"y","value":"731","name":"y"},{"key":"width","value":"62","name":"width"},{"key":"height","value":"19","name":"height"},{"key":"index","value":"0","name":"index"}]
         }
     }
 }
-
-
-
-
-
-

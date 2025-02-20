@@ -5,9 +5,7 @@
     <classes>
       <class name="tests.DemoTests">
         <methods>
-          <include name="AppLaunch_DefaultDisplay_7465"/>
           <include name="beforeMethod"/>
-          <include name="AppLaunch_StartUpHelp_7469"/>
           <include name="Login_ValidInputs_7522"/>
           <include name="afterMethod"/>
         </methods>
