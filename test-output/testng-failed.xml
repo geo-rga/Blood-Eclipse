@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.DemoTests_Android">
+      <class name="tests.DemoTests">
         <methods>
-          <include name="android_AppLaunch_DefaultDisplay_7465"/>
-          <include name="setup"/>
-          <include name="afterMethod"/>
-          <include name="android_AppLaunch_StartUpHelp_7469"/>
+          <include name="iOS_AppLaunch_DefaultDisplay_7465"/>
+          <include name="androidAfterMethod"/>
+          <include name="androidBeforeMethod"/>
         </methods>
-      </class> <!-- tests.DemoTests_Android -->
+      </class> <!-- tests.DemoTests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

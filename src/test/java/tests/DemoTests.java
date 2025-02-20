@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.MobileBy;
+import utils.CustomKeywords;
 import utils.TestConfig;
 
 public class DemoTests extends InitClass {
