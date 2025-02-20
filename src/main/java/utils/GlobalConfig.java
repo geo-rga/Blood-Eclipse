@@ -1,6 +1,6 @@
 package utils;
 
-public class TestConfig {
+public class GlobalConfig {
     private static String platformName;
 
     public static void setPlatformName(String platform) {

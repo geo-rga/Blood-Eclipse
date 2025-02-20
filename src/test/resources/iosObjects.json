@@ -58,5 +58,46 @@
             ],
 			"attributes": [{"key":"elementId","value":"5D000000-0000-0000-F40A-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeStaticText","name":"type"},{"key":"value","value":"If you have an existing username & password for redcrossblood.org, you should choose ‘Log in’ from the Welcome Screen, and use those same credentials to log in to the app.  If you do not have a username/password specific to redcrossblood.org, even if you’re an existing donor, you must create one by selecting ‘Sign up’ on the Welcome Screen in order to use the app.","name":"value"},{"key":"name","value":"If you have an existing username & password for redcrossblood.org, you should choose ‘Log in’ from the Welcome Screen, and use those same credentials to log in to the app.  If you do not have a username/password specific to redcrossblood.org, even if you’re an existing donor, you must create one by selecting ‘Sign up’ on the Welcome Screen in order to use the app.","name":"name"},{"key":"label","value":"If you have an existing username & password for redcrossblood.org, you should choose ‘Log in’ from the Welcome Screen, and use those same credentials to log in to the app.  If you do not have a username/password specific to redcrossblood.org, even if you’re an existing donor, you must create one by selecting ‘Sign up’ on the Welcome Screen in order to use the app.","name":"label"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"true","name":"accessible"},{"key":"x","value":"24","name":"x"},{"key":"y","value":"276","name":"y"},{"key":"width","value":"280","name":"width"},{"key":"height","value":"140","name":"height"},{"key":"index","value":"1","name":"index"}]
         }
-	}
+	},
+    "loginScreen":{
+        "t_loginScreen_welcomeBackTitle": {
+            "locators": [
+                {"type": "accessibility id", "value": "Welcome back"},
+                {"type": "xpath", "value": "//XCUIElementTypeStaticText[@name=\"Welcome back\"]"}
+            ],
+            "attributes": [{"key":"elementId","value":"41000000-0000-0000-830C-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeStaticText","name":"type"},{"key":"value","value":"Welcome back","name":"value"},{"key":"name","value":"Welcome back","name":"name"},{"key":"label","value":"Welcome back","name":"label"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"true","name":"accessible"},{"key":"x","value":"113","name":"x"},{"key":"y","value":"124","name":"y"},{"key":"width","value":"149","name":"width"},{"key":"height","value":"26","name":"height"},{"key":"index","value":"0","name":"index"}]
+        },
+        "i_loginScreen_usernameField": {
+            "locators": [
+                {"type": "accessibility id", "value": "Username field"},
+                {"type": "xpath", "value": "//XCUIElementTypeTextField[@name=\"Username field\"]"}
+            ],
+            "attributes": [{"key":"elementId","value":"2D000000-0000-0000-830C-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeTextField","name":"type"},{"key":"value","value":"Username","name":"value"},{"key":"name","value":"Username field","name":"name"},{"key":"label","value":"Username field","name":"label"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"true","name":"accessible"},{"key":"x","value":"18","name":"x"},{"key":"y","value":"213","name":"y"},{"key":"width","value":"339","name":"width"},{"key":"height","value":"45","name":"height"},{"key":"index","value":"1","name":"index"}]
+        },
+        "i_loginScreen_passwordField": {
+            "locators": [
+                {"type": "accessibility id", "value": "Password field"},
+                {"type": "xpath", "value": "//XCUIElementTypeSecureTextField[@name=\"Password field\"]"}
+            ],
+            "attributes": [{"key":"elementId","value":"42000000-0000-0000-830C-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeSecureTextField","name":"type"},{"key":"value","value":"Password","name":"value"},{"key":"name","value":"Password field","name":"name"},{"key":"label","value":"Password field","name":"label"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"true","name":"accessible"},{"key":"x","value":"18","name":"x"},{"key":"y","value":"300","name":"y"},{"key":"width","value":"339","name":"width"},{"key":"height","value":"46","name":"height"},{"key":"index","value":"2","name":"index"}]
+        },
+        "btn_loginScreen_continue": {
+            "locators": [
+                {"type": "xpath", "value": "//XCUIElementTypeButton[@name=\"CONTINUE\"]"}
+            ],
+            "attributes": [{"key":"elementId","value":"44000000-0000-0000-830C-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeButton","name":"type"},{"key":"name","value":"CONTINUE","name":"name"},{"key":"label","value":"CONTINUE","name":"label"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"true","name":"accessible"},{"key":"x","value":"18","name":"x"},{"key":"y","value":"361","name":"y"},{"key":"width","value":"339","name":"width"},{"key":"height","value":"46","name":"height"},{"key":"index","value":"4","name":"index"}]
+        },
+        "btn_loginScreen_forgotDetails": {
+            "locators": [
+                {"type": "xpath", "value": "//XCUIElementTypeButton[@name=\"Forgot your username / password?\"]"}
+            ],
+            "attributes": [{"key":"elementId","value":"46000000-0000-0000-830C-000000000000","name":"elementId"},{"key":"type","value":"XCUIElementTypeButton","name":"type"},{"key":"name","value":"Forgot your username / password?","name":"name"},{"key":"label","value":"Forgot your username / password?","name":"label"},{"key":"enabled","value":"true","name":"enabled"},{"key":"visible","value":"true","name":"visible"},{"key":"accessible","value":"true","name":"accessible"},{"key":"x","value":"63","name":"x"},{"key":"y","value":"422","name":"y"},{"key":"width","value":"248","name":"width"},{"key":"height","value":"31","name":"height"},{"key":"index","value":"6","name":"index"}]
+        }
+    }
 }
+
+
+
+
+
+

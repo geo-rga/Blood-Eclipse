@@ -8,12 +8,12 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.testng.annotations.*;
 import io.appium.java_client.AppiumDriver;
 import utils.CustomKeywords;
-import utils.TestConfig;
+import utils.GlobalConfig;
 
 public class InitClass {
 	
 	AppiumDriver driver;
-	public VariableStore objects;
+	public ObjectStore objects;
 	public CustomKeywords CustomKeywords;
 	
 	@BeforeMethod
@@ -53,10 +53,10 @@ public class InitClass {
 			URL url = new URL("http://127.0.0.1:4723/");
 			
 			String platformName = capabilities.getCapability("platformName").toString();
-			TestConfig.setPlatformName(platformName);
+			GlobalConfig.setPlatformName(platformName);
 			
 			driver = new AppiumDriver(url, capabilities);
-			objects = new VariableStore(driver);
+			objects = new ObjectStore(driver);
 			CustomKeywords = new CustomKeywords(driver);
 			
 			Thread.sleep(5000);

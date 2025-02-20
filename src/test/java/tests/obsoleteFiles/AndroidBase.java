@@ -10,7 +10,7 @@ import org.openqa.selenium.remote.CapabilityType;
 // Ensure that annotations always come from org.testng
 import org.testng.annotations.*;
 import io.appium.java_client.AppiumDriver;
-import utils.TestConfig;
+import utils.GlobalConfig;
 
 public class AndroidBase {
 	
@@ -42,7 +42,7 @@ public class AndroidBase {
 			URL url = new URL("http://127.0.0.1:4723/");
 			
 			String platformName = capabilities.getCapability("platformName").toString();
-			TestConfig.setPlatformName(platformName);
+			GlobalConfig.setPlatformName(platformName);
 			
 			driver = new AppiumDriver(url, capabilities);
 			objects = new AndroidVariableStore(driver);

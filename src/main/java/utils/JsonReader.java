@@ -18,11 +18,11 @@ public class JsonReader {
 		String jsonFile = "";
 
 		try {
-			System.out.println(TestConfig.getPlatformName()); // Debug log
+			System.out.println(GlobalConfig.getPlatformName()); // Debug log
 			
-			if (TestConfig.getPlatformName().equalsIgnoreCase("ANDROID")) {
+			if (GlobalConfig.getPlatformName().equalsIgnoreCase("ANDROID")) {
 		        jsonFile = "androidObjects.json";
-		    } else if (TestConfig.getPlatformName().equalsIgnoreCase("IOS")) {
+		    } else if (GlobalConfig.getPlatformName().equalsIgnoreCase("IOS")) {
 		    	jsonFile = "iosObjects.json";
 		    } 
 		} catch (Exception e) {

@@ -6,7 +6,6 @@ public class DemoTests extends InitClass {
 	
 	@Test
 	public void AppLaunch_DefaultDisplay_7465() throws InterruptedException {
-		
 		assert CustomKeywords.validateDisplayed(objects.img_landingPage_arcLogo_locator);
 		assert CustomKeywords.validateDisplayed(objects.t_landingPage_title_locator);
 		assert CustomKeywords.validateDisplayed(objects.img_landingPage_image_locator);
@@ -14,7 +13,6 @@ public class DemoTests extends InitClass {
 		assert CustomKeywords.validateDisplayed(objects.btn_landingPage_createAccount_locator);
 		assert CustomKeywords.validateDisplayed(objects.btn_landingPage_logIn_locator);
 		assert CustomKeywords.validateDisplayed(objects.btn_landingPage_loginHelp_locator);
-		
 	}
 	
 	@Test
@@ -28,7 +26,15 @@ public class DemoTests extends InitClass {
 		driver.findElement(objects.btn_startUpHelp_dropdown_locator).click();
 		Thread.sleep(2000);
 		assert CustomKeywords.validateNotDisplayed(objects.t_startUpHelp_dropdownContent_locator);
-	
 	}
+	
+	@Test
+	public void Login_DefaultDisplay_7521() throws InterruptedException {
+		driver.findElement(objects.btn_landingPage_logIn_locator).click();
+		Thread.sleep(2000);
+		
+	}
+	
+	
 
 }
