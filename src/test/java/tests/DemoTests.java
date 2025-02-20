@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 public class DemoTests extends InitClass {
 	
 	@Test
-	public void iOS_AppLaunch_DefaultDisplay_7465() throws InterruptedException {
+	public void AppLaunch_DefaultDisplay_7465() throws InterruptedException {
 		
 		assert validateDisplayed(objects.img_landingPage_arcLogo_locator);
 		assert validateDisplayed(objects.t_landingPage_title_locator);
@@ -18,7 +18,7 @@ public class DemoTests extends InitClass {
 	}
 	
 	@Test
-	public void iOS_AppLaunch_StartUpHelp_7469() throws InterruptedException {
+	public void AppLaunch_StartUpHelp_7469() throws InterruptedException {
 		driver.findElement(objects.btn_landingPage_loginHelp_locator).click();
 		Thread.sleep(2000);
 		driver.findElement(objects.btn_startUpHelp_dropdown_locator).click();

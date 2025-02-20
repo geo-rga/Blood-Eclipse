@@ -18,64 +18,38 @@ public class InitClass {
 	public VariableStore objects;
 	
 	@BeforeMethod
-	public void androidBeforeMethod() {	
+	public void beforeMethod() {
 		try {
-			String appPath = System.getProperty("user.dir")+"/src/test/resources/apps/BloodStaging1957.apk";
+			String configPlatform = System.getProperty("platform");
+			System.out.println("Config platform: " + configPlatform);
 			
 			DesiredCapabilities capabilities = new DesiredCapabilities();
-			capabilities.setCapability(CapabilityType.PLATFORM_NAME, "Android");
-			capabilities.setCapability("appium:platformVersion", "15");
-			capabilities.setCapability("appium:deviceName", "Pixel 7");
-			capabilities.setCapability("appium:udid", "32011FDH2003H8");
 			
-			capabilities.setCapability("appium:newCommandTimeout", 60);
-			capabilities.setCapability("appium:automationName", "uiautomator2");
-			capabilities.setCapability("appium:chromedriverAutodownload", true);
-			capabilities.setCapability("appium:app", appPath);
-			
-			URL url = new URL("http://127.0.0.1:4723/");
-			
-			String platformName = capabilities.getCapability("platformName").toString();
-			TestConfig.setPlatformName(platformName);
-			
-			driver = new AppiumDriver(url, capabilities);
-			objects = new VariableStore(driver);
-			
-			Thread.sleep(5000);
-		
-			
-		} catch (Exception e) {
-			System.out.println(e.getCause());
-			System.out.println(e.getMessage());
-			e.printStackTrace();
-		}
-	}
-	
-
-	@AfterMethod
-	public void androidAfterMethod() {
-		System.out.println("\n -------- END OF TEST -------- \n");
-		driver.quit();
-	}
-	
-	@BeforeMethod
-	public void iosBeforeMethod() {	
-		try {		
-			
-			String appPath = System.getProperty("user.dir")+"/src/test/resources/apps/BloodStaging2148.ipa";
-
-			DesiredCapabilities capabilities = new DesiredCapabilities();
-			capabilities.setCapability(CapabilityType.PLATFORM_NAME, "ios");
-			capabilities.setCapability("appium:platformVersion", "18.1");
-			capabilities.setCapability("appium:deviceName", "GT - iPhone 11 (18.1)");
-			capabilities.setCapability("appium:udid", "00008030-000A31C134C0802E");
-			capabilities.setCapability("appium:newCommandTimeout", 60);
-			capabilities.setCapability("appium:automationName", "XCUITest");
-			capabilities.setCapability("appium:app", appPath);
-			capabilities.setCapability("appium:xcodeOrgId", "25H7BM6YWK");
-			capabilities.setCapability("appium:xcodeSigningId", "iPhone Developer");
-			capabilities.setCapability("appium:updatedWDABundleId", "com.facebook.WebDriverAgentRunner.xctrunner");
-	
+			if(configPlatform.equalsIgnoreCase("Android")) {
+				String appPath = System.getProperty("user.dir")+"/src/test/resources/apps/BloodStaging1957.apk";
+				capabilities.setCapability(CapabilityType.PLATFORM_NAME, "Android");
+				capabilities.setCapability("appium:platformVersion", "15");
+				capabilities.setCapability("appium:deviceName", "Pixel 7");
+				capabilities.setCapability("appium:udid", "32011FDH2003H8");
+				capabilities.setCapability("appium:newCommandTimeout", 60);
+				capabilities.setCapability("appium:automationName", "uiautomator2");
+				capabilities.setCapability("appium:chromedriverAutodownload", true);
+				capabilities.setCapability("appium:app", appPath);
+			} else if (configPlatform.equalsIgnoreCase("iOS")) {
+				String appPath = System.getProperty("user.dir")+"/src/test/resources/apps/BloodStaging2148.ipa";
+				capabilities.setCapability(CapabilityType.PLATFORM_NAME, "ios");
+				capabilities.setCapability("appium:platformVersion", "18.1");
+				capabilities.setCapability("appium:deviceName", "GT - iPhone 11 (18.1)");
+				capabilities.setCapability("appium:udid", "00008030-000A31C134C0802E");
+				capabilities.setCapability("appium:newCommandTimeout", 60);
+				capabilities.setCapability("appium:automationName", "XCUITest");
+				capabilities.setCapability("appium:app", appPath);
+				capabilities.setCapability("appium:xcodeOrgId", "25H7BM6YWK");
+				capabilities.setCapability("appium:xcodeSigningId", "iPhone Developer");
+				capabilities.setCapability("appium:updatedWDABundleId", "com.facebook.WebDriverAgentRunner.xctrunner");
+			} else {
+				throw new IllegalArgumentException("Invalid platform: " + configPlatform);
+			}
 
 			URL url = new URL("http://127.0.0.1:4723/");
 			
@@ -95,7 +69,7 @@ public class InitClass {
 	}
 	
 	@AfterMethod
-	public void iosAfterMethod() {
+	public void afterMethod() {
 		System.out.println("\n -------- END OF TEST -------- \n");
 		driver.quit();
 	}

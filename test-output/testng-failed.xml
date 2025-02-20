@@ -5,9 +5,10 @@
     <classes>
       <class name="tests.DemoTests">
         <methods>
-          <include name="iOS_AppLaunch_DefaultDisplay_7465"/>
-          <include name="androidAfterMethod"/>
-          <include name="androidBeforeMethod"/>
+          <include name="AppLaunch_DefaultDisplay_7465"/>
+          <include name="beforeMethod"/>
+          <include name="AppLaunch_StartUpHelp_7469"/>
+          <include name="afterMethod"/>
         </methods>
       </class> <!-- tests.DemoTests -->
     </classes>
