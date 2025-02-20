@@ -3,9 +3,6 @@ package tests;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.URL;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.CapabilityType;
 // Ensure that annotations always come from org.testng
 import org.testng.annotations.*;
@@ -76,29 +73,5 @@ public class InitClass {
 		System.out.println("\n -------- END OF TEST -------- \n");
 		driver.quit();
 	}
-	
-//	boolean validateDisplayed(By loc) {
-//		String obj = loc.toString();
-//		try {
-//			WebElement el = driver.findElement(loc);
-//			System.out.println("Element "+obj+" displayed (expected)");
-//			return el.isDisplayed();
-//		} catch (NoSuchElementException e) {
-//			System.out.println("Element "+obj+" not displayed (fail)");
-//			return false;
-//		}
-//	}
-//	
-//	boolean validateNotDisplayed(By loc) {
-//		String obj = loc.toString();
-//		try {
-//			WebElement el = driver.findElement(loc);
-//			System.out.println("Element "+obj+" displayed (fail)");
-//			return !el.isDisplayed();
-//		} catch (NoSuchElementException e) {
-//			System.out.println("Element "+obj+" not displayed (expected)");
-//			return true;
-//		}
-//	}
 
 }
