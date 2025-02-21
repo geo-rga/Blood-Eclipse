@@ -28,30 +28,12 @@ public class InitClass {
 			
 			if(configPlatform.equalsIgnoreCase("Android")) {
 				capabilities = AndroidCapabilities.getCapabilities();
-//				capabilities.setCapability(CapabilityType.PLATFORM_NAME, System.getProperty("platform"));
-//				capabilities.setCapability("appium:platformVersion", GlobalConfig.androidVersion);
-//				capabilities.setCapability("appium:deviceName", GlobalConfig.androidDeviceName);
-//				capabilities.setCapability("appium:udid", GlobalConfig.androidUDID);
-//				capabilities.setCapability("appium:app", GlobalConfig.androidPath);
-//				capabilities.setCapability("appium:automationName", GlobalConfig.androidAutomationName);
-//				capabilities.setCapability("appium:chromedriverAutodownload", true);
 				
 			} else if (configPlatform.equalsIgnoreCase("iOS")) {
 				capabilities = IOSCapabilities.getCapabilities();
-//				capabilities.setCapability(CapabilityType.PLATFORM_NAME, System.getProperty("platform"));
-//				capabilities.setCapability("appium:platformVersion", GlobalConfig.iosVersion);
-//				capabilities.setCapability("appium:deviceName", GlobalConfig.iosDeviceName);
-//				capabilities.setCapability("appium:udid", GlobalConfig.iosUDID);
-//				capabilities.setCapability("appium:automationName", GlobalConfig.iosAutomationName);
-//				capabilities.setCapability("appium:app", GlobalConfig.iosPath);
-//				capabilities.setCapability("appium:xcodeOrgId", GlobalConfig.xcodeOrgId);
-//				capabilities.setCapability("appium:xcodeSigningId", GlobalConfig.xcodeSigningId);
-//				capabilities.setCapability("appium:updatedWDABundleId", GlobalConfig.updatedWDABundleId);
 			} else {
 				throw new IllegalArgumentException("Invalid platform: " + configPlatform);
 			}
-
-//			capabilities.setCapability("appium:newCommandTimeout", 60);
 			
 			URL url = new URL("http://127.0.0.1:4723/");
 			
