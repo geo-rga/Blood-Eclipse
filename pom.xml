@@ -86,5 +86,10 @@
 		</dependency>
 
 
+		<dependency>
+			<groupId>samples</groupId>
+			<artifactId>selenium-with-java</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 </project>

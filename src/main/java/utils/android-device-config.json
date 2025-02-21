@@ -1,0 +1,12 @@
+{
+	"platform": "android",
+	"deviceName": "Pixel 7",
+	"platformVersion": "15",
+	"udid":"32011FDH2003H8",
+	"app": "/src/test/resources/apps/BloodStaging1957.apk",
+	"automationName": "uiautomator2",
+	"chromedriverAutodownload": true,
+	"newCommandTimeout": 60,
+	"fullReset": true
+	
+}

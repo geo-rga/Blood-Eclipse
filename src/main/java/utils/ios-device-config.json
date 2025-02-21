@@ -1,0 +1,12 @@
+{
+	"platform": "ios",
+	"deviceName": "GT - iPhone 11 (18.1)",
+	"platformVersion": "18.1",
+	"udid":"00008030-000A31C134C0802E",
+	"app": "/src/test/resources/apps/BloodStaging2148.ipa",
+	"automationName": "XCUITest",
+	"xcodeOrgId": "25H7BM6YWK",
+	"xcodeSigningId": "iPhone Developer",
+	"updatedWDABundleId": "com.facebook.WebDriverAgentRunner.xctrunner",
+	"newCommandTimeout": 60
+}
