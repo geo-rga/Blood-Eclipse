@@ -2,13 +2,16 @@ package tests;
 
 import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.URL;
+import java.util.Map;
 
 // Ensure that annotations always come from org.testng
 import org.testng.annotations.*;
 import io.appium.java_client.AppiumDriver;
 import utils.CustomKeywords;
+import utils.DynamicCapabilities;
 import utils.IOSCapabilities;
 import utils.AndroidCapabilities;
+import utils.ConfigReader;
 
 public class InitClassJson {
 	
@@ -27,22 +30,20 @@ public class InitClassJson {
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 			
 			if(configPlatform.equalsIgnoreCase("Android")) {
-				// All Android setup is defined in the below AndroidCapabilities util
-				capabilities = AndroidCapabilities.getCapabilities();
+				// Mapping from specific device config file
+				capabilities = DynamicCapabilities.getCapabilities(System.getProperty("user.dir")+"/src/main/java/utils/android-device-config.json");
 				
 			} else if (configPlatform.equalsIgnoreCase("iOS")) {
-				// All iOS setup is defined in the below IOSCapabilities util
-				capabilities = IOSCapabilities.getCapabilities();
+				// Mapping from specific device config file
+				capabilities = DynamicCapabilities.getCapabilities(System.getProperty("user.dir")+"/src/main/java/utils/ios-device-config.json");
+				
 			} else {
 				// If platform variable isn't provided, exception here is thrown
 				throw new IllegalArgumentException("Invalid platform: " + configPlatform);
 			}
 			
-			// This is the default 
-			URL url = new URL("http://127.0.0.1:4723/");
-			
 			// Setting up the driver and calling objects and keywords from the different classes
-			driver = new AppiumDriver(url, capabilities);
+			driver = new AppiumDriver(new URL("http://127.0.0.1:4723/"), capabilities);
 			objects = new ObjectStore(driver);
 			CustomKeywords = new CustomKeywords(driver);
 			

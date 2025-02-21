@@ -1,5 +1,5 @@
 {
-	"platform": "ios",
+	"platformName": "ios",
 	"deviceName": "GT - iPhone 11 (18.1)",
 	"platformVersion": "18.1",
 	"udid":"00008030-000A31C134C0802E",

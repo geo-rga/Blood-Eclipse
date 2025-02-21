@@ -5,9 +5,11 @@
     <classes>
       <class name="tests.DemoTests">
         <methods>
+          <include name="AppLaunch_DefaultDisplay_7465"/>
           <include name="beforeMethod"/>
-          <include name="Login_ValidInputs_7522"/>
+          <include name="AppLaunch_StartUpHelp_7469"/>
           <include name="afterMethod"/>
+          <include name="Login_ValidInputs_7522"/>
         </methods>
       </class> <!-- tests.DemoTests -->
     </classes>

@@ -1,5 +1,5 @@
 {
-	"platform": "android",
+	"platformName": "android",
 	"deviceName": "Pixel 7",
 	"platformVersion": "15",
 	"udid":"32011FDH2003H8",

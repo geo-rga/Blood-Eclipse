@@ -2,7 +2,7 @@ package tests;
 
 import org.testng.annotations.Test;
 
-public class DemoTests extends InitClass {
+public class DemoTests extends InitClassJson {
 	
 	@Test
 	public void AppLaunch_DefaultDisplay_7465() throws InterruptedException {
