@@ -25,31 +25,29 @@ public class InitClass {
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 			
 			if(configPlatform.equalsIgnoreCase("Android")) {
-				String appPath = System.getProperty("user.dir")+"/src/test/resources/apps/BloodStaging1947.apk";
-				capabilities.setCapability(CapabilityType.PLATFORM_NAME, "Android");
-				capabilities.setCapability("appium:platformVersion", "15");
-				capabilities.setCapability("appium:deviceName", "Pixel 7");
-				capabilities.setCapability("appium:udid", "32011FDH2003H8");
-				capabilities.setCapability("appium:newCommandTimeout", 60);
-				capabilities.setCapability("appium:automationName", "uiautomator2");
+				capabilities.setCapability(CapabilityType.PLATFORM_NAME, System.getProperty("platform"));
+				capabilities.setCapability("appium:platformVersion", GlobalConfig.androidVersion);
+				capabilities.setCapability("appium:deviceName", GlobalConfig.androidDeviceName);
+				capabilities.setCapability("appium:udid", GlobalConfig.androidUDID);
+				capabilities.setCapability("appium:app", GlobalConfig.androidPath);
+				capabilities.setCapability("appium:automationName", GlobalConfig.androidAutomationName);
 				capabilities.setCapability("appium:chromedriverAutodownload", true);
-				capabilities.setCapability("appium:app", appPath);
 			} else if (configPlatform.equalsIgnoreCase("iOS")) {
-				String appPath = System.getProperty("user.dir")+"/src/test/resources/apps/BloodStaging2148.ipa";
-				capabilities.setCapability(CapabilityType.PLATFORM_NAME, "ios");
-				capabilities.setCapability("appium:platformVersion", "18.1");
-				capabilities.setCapability("appium:deviceName", "GT - iPhone 11 (18.1)");
-				capabilities.setCapability("appium:udid", "00008030-000A31C134C0802E");
-				capabilities.setCapability("appium:newCommandTimeout", 60);
-				capabilities.setCapability("appium:automationName", "XCUITest");
-				capabilities.setCapability("appium:app", appPath);
-				capabilities.setCapability("appium:xcodeOrgId", "25H7BM6YWK");
-				capabilities.setCapability("appium:xcodeSigningId", "iPhone Developer");
-				capabilities.setCapability("appium:updatedWDABundleId", "com.facebook.WebDriverAgentRunner.xctrunner");
+				capabilities.setCapability(CapabilityType.PLATFORM_NAME, System.getProperty("platform"));
+				capabilities.setCapability("appium:platformVersion", GlobalConfig.iosVersion);
+				capabilities.setCapability("appium:deviceName", GlobalConfig.iosDeviceName);
+				capabilities.setCapability("appium:udid", GlobalConfig.iosUDID);
+				capabilities.setCapability("appium:automationName", GlobalConfig.iosAutomationName);
+				capabilities.setCapability("appium:app", GlobalConfig.iosPath);
+				capabilities.setCapability("appium:xcodeOrgId", GlobalConfig.xcodeOrgId);
+				capabilities.setCapability("appium:xcodeSigningId", GlobalConfig.xcodeSigningId);
+				capabilities.setCapability("appium:updatedWDABundleId", GlobalConfig.updatedWDABundleId);
 			} else {
 				throw new IllegalArgumentException("Invalid platform: " + configPlatform);
 			}
 
+			capabilities.setCapability("appium:newCommandTimeout", 60);
+			
 			URL url = new URL("http://127.0.0.1:4723/");
 			
 			driver = new AppiumDriver(url, capabilities);
