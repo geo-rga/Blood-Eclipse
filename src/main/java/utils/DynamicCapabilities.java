@@ -19,16 +19,19 @@ public class DynamicCapabilities {
 			Object value = entry.getValue();
             String key = entry.getKey();
 			
-			if ("app".equals(key)) {
-				String relativePath = (String) value;
-				String absolutePath = System.getProperty("user.dir")+relativePath;
-				caps.setCapability(key, absolutePath);
-					
-			} else {
-				// Dynamically setting each property (key, value) from the config to capabilities
-				caps.setCapability(entry.getKey(), entry.getValue());
-				
-			}
+//			if ("app".equals(key)) {
+//				String relativePath = (String) value;
+//				String absolutePath = System.getProperty("user.dir")+relativePath;
+//				caps.setCapability(key, absolutePath);
+//					
+//			} else {
+//				// Dynamically setting each property (key, value) from the config to capabilities
+//				caps.setCapability(entry.getKey(), entry.getValue());
+//				
+//			}
+			
+			// Dynamically setting each property (key, value) from the config to capabilities
+			caps.setCapability(entry.getKey(), entry.getValue());
         }
 		
 		return caps;

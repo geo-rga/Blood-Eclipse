@@ -2,44 +2,44 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-21T11:33:25 GMT" name="Default suite" finished-at="2025-02-21T11:34:37 GMT" duration-ms="71114">
+  <suite started-at="2025-02-21T12:04:09 GMT" name="Default suite" finished-at="2025-02-21T12:05:39 GMT" duration-ms="89505">
     <groups>
     </groups>
-    <test started-at="2025-02-21T11:33:25 GMT" name="Default test" finished-at="2025-02-21T11:34:37 GMT" duration-ms="71114">
+    <test started-at="2025-02-21T12:04:09 GMT" name="Default test" finished-at="2025-02-21T12:05:39 GMT" duration-ms="89505">
       <class name="tests.DemoTests">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.DemoTests@206a70ef]" started-at="2025-02-21T11:33:26 GMT" name="beforeMethod" finished-at="2025-02-21T11:33:41 GMT" duration-ms="15465" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.DemoTests@206a70ef]" started-at="2025-02-21T12:04:09 GMT" name="beforeMethod" finished-at="2025-02-21T12:04:32 GMT" duration-ms="22403" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="AppLaunch_DefaultDisplay_7465()[pri:0, instance:tests.DemoTests@206a70ef]" started-at="2025-02-21T11:33:41 GMT" name="AppLaunch_DefaultDisplay_7465" finished-at="2025-02-21T11:33:42 GMT" duration-ms="629" status="PASS">
+        <test-method signature="AppLaunch_DefaultDisplay_7465()[pri:0, instance:tests.DemoTests@206a70ef]" started-at="2025-02-21T12:04:32 GMT" name="AppLaunch_DefaultDisplay_7465" finished-at="2025-02-21T12:04:34 GMT" duration-ms="2399" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AppLaunch_DefaultDisplay_7465 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.DemoTests@206a70ef]" started-at="2025-02-21T11:33:42 GMT" name="afterMethod" finished-at="2025-02-21T11:33:42 GMT" duration-ms="783" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.DemoTests@206a70ef]" started-at="2025-02-21T12:04:34 GMT" name="afterMethod" finished-at="2025-02-21T12:04:35 GMT" duration-ms="1039" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.DemoTests@206a70ef]" started-at="2025-02-21T11:33:42 GMT" name="beforeMethod" finished-at="2025-02-21T11:33:56 GMT" duration-ms="13529" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.DemoTests@206a70ef]" started-at="2025-02-21T12:04:35 GMT" name="beforeMethod" finished-at="2025-02-21T12:04:50 GMT" duration-ms="14915" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="AppLaunch_StartUpHelp_7469()[pri:0, instance:tests.DemoTests@206a70ef]" started-at="2025-02-21T11:33:56 GMT" name="AppLaunch_StartUpHelp_7469" finished-at="2025-02-21T11:34:07 GMT" duration-ms="11421" status="PASS">
+        <test-method signature="AppLaunch_StartUpHelp_7469()[pri:0, instance:tests.DemoTests@206a70ef]" started-at="2025-02-21T12:04:50 GMT" name="AppLaunch_StartUpHelp_7469" finished-at="2025-02-21T12:05:04 GMT" duration-ms="13886" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AppLaunch_StartUpHelp_7469 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.DemoTests@206a70ef]" started-at="2025-02-21T11:34:07 GMT" name="afterMethod" finished-at="2025-02-21T11:34:08 GMT" duration-ms="723" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.DemoTests@206a70ef]" started-at="2025-02-21T12:05:04 GMT" name="afterMethod" finished-at="2025-02-21T12:05:05 GMT" duration-ms="1039" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.DemoTests@206a70ef]" started-at="2025-02-21T11:34:08 GMT" name="beforeMethod" finished-at="2025-02-21T11:34:22 GMT" duration-ms="13613" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:tests.DemoTests@206a70ef]" started-at="2025-02-21T12:05:05 GMT" name="beforeMethod" finished-at="2025-02-21T12:05:20 GMT" duration-ms="14881" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="Login_ValidInputs_7522()[pri:0, instance:tests.DemoTests@206a70ef]" started-at="2025-02-21T11:34:22 GMT" name="Login_ValidInputs_7522" finished-at="2025-02-21T11:34:36 GMT" duration-ms="14336" status="PASS">
+        <test-method signature="Login_ValidInputs_7522()[pri:0, instance:tests.DemoTests@206a70ef]" started-at="2025-02-21T12:05:20 GMT" name="Login_ValidInputs_7522" finished-at="2025-02-21T12:05:38 GMT" duration-ms="17857" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_ValidInputs_7522 -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.DemoTests@206a70ef]" started-at="2025-02-21T11:34:36 GMT" name="afterMethod" finished-at="2025-02-21T11:34:37 GMT" duration-ms="560" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.DemoTests@206a70ef]" started-at="2025-02-21T12:05:38 GMT" name="afterMethod" finished-at="2025-02-21T12:05:39 GMT" duration-ms="1034" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

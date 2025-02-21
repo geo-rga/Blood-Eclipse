@@ -3,7 +3,7 @@
 	"deviceName": "GT - iPhone 11 (18.1)",
 	"platformVersion": "18.1",
 	"udid":"00008030-000A31C134C0802E",
-	"app": "/src/test/resources/apps/BloodStaging2148.ipa",
+	"app": "https://storage.googleapis.com/bitrise-build-storage-prod-with-retention-policy/apps/e850055702abf0e6/builds/9d1e372a-c398-448b-8ad5-3456d928d600/artifacts/8f23eb6849ebde39/Blood.ipa?GoogleAccessId=build-artifact-sa-prod%40ip-web-monolith-prod.iam.gserviceaccount.com&Expires=1740182626&Signature=nNdaag%2FjgVX039Vx%2BmgX%2BhUpnBH%2BtccJTze9y0sPHpCzT0GydiKQIBJB77DsFv8VamrPax0ktNIGFOyRp%2B7zBG32chKbhRcez8gJI%2F5Iy5n7q%2BXb7bwyVTNwp7YpsQb8JeeIAx6dBNkZy7UvC6jtoe9UorkMfcSZ4CQKWBmg%2BW4lK8mOXbBhqKyP%2FuwosZQmU0zk0zhGUVp4McELHi%2FFrzYgAZNLils9zs3VCRhJD2qUn44Njdu%2BnWc%2FZsG7UGkHzzwswsEioeAkRQwdrxEAbPWQOx%2By3NudEpAUQitRdCrC0xSC9pIHd3wO6d0pSmx2pXlAQ2sck0E4CjjUi1K97A%3D%3D",
 	"automationName": "XCUITest",
 	"xcodeOrgId": "25H7BM6YWK",
 	"xcodeSigningId": "iPhone Developer",

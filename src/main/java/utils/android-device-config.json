@@ -3,10 +3,11 @@
 	"deviceName": "Pixel 7",
 	"platformVersion": "15",
 	"udid":"32011FDH2003H8",
-	"app": "/src/test/resources/apps/BloodStaging1957.apk",
+	"app": "https://bitrise-prod-build-storage.s3.amazonaws.com/builds/e86a2976-616d-4997-bc10-cd4b5d4eff7a/artifacts/300159508/Codebase-stagingApi-stagingStorm-stagingAdobe-release-bitrise-signed.apk?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIV2YZWMVCNWNR2HA%2F20250221%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250221T115450Z&X-Amz-Expires=43200&X-Amz-SignedHeaders=host&X-Amz-Signature=9078325a5d26f993d0d0a283e0635e054f40213670e68d8f15ea6c8106ed10d5",
 	"automationName": "uiautomator2",
 	"chromedriverAutodownload": true,
 	"newCommandTimeout": 60,
 	"fullReset": true
 	
 }
+
