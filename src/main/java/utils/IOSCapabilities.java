@@ -6,6 +6,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 public class IOSCapabilities {
 	
 	public static DesiredCapabilities getCapabilities() {
+		// Properties required to run tests on an iOS real device. Also set up in ios-device-config.json file
 		DesiredCapabilities iosCapabilities = new DesiredCapabilities();
 		iosCapabilities.setCapability(CapabilityType.PLATFORM_NAME, System.getProperty("platform"));
 		iosCapabilities.setCapability("appium:platformVersion", "18.1");

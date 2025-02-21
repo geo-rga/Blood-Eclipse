@@ -3,14 +3,12 @@ package tests;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.URL;
 
-//import org.openqa.selenium.remote.CapabilityType;
 // Ensure that annotations always come from org.testng
 import org.testng.annotations.*;
 import io.appium.java_client.AppiumDriver;
-import utils.AndroidCapabilities;
 import utils.CustomKeywords;
-//import utils.GlobalConfig;
 import utils.IOSCapabilities;
+import utils.AndroidCapabilities;
 
 public class InitClass {
 	
@@ -43,15 +41,18 @@ public class InitClass {
 			// This is the default 
 			URL url = new URL("http://127.0.0.1:4723/");
 			
+			// Setting up the driver and calling objects and keywords from the different classes
 			driver = new AppiumDriver(url, capabilities);
 			objects = new ObjectStore(driver);
 			CustomKeywords = new CustomKeywords(driver);
 			
+			// Documentation for the console
 			System.out.println("\n -------- START OF TEST -------- \n");
 						
 			Thread.sleep(5000);
 			
 		} catch (Exception e) {
+			// Prints errors if beforeMethod can't run
 			System.out.println(e.getCause());
 			System.out.println(e.getMessage());
 			e.printStackTrace();
@@ -60,6 +61,7 @@ public class InitClass {
 	
 	@AfterMethod
 	public void afterMethod() {
+		// Documentation for the console
 		System.out.println("\n -------- END OF TEST -------- \n");
 		driver.quit();
 	}

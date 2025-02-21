@@ -6,6 +6,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 public class AndroidCapabilities {
 	
 	public static DesiredCapabilities getCapabilities() {
+		// Properties required to run tests on an Android real device. Also set up in android-device-config.json file
 		DesiredCapabilities androidCapabilities = new DesiredCapabilities();
 		androidCapabilities.setCapability(CapabilityType.PLATFORM_NAME, System.getProperty("platform"));
 		androidCapabilities.setCapability("appium:platformVersion", "15");

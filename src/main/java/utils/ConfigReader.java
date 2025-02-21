@@ -5,6 +5,7 @@ import java.io.File;
 import java.util.Map;
 
 public class ConfigReader {
+	// Utility function for reading device config files for capabilities
     public static Map<String, String> readConfig(String filePath) {
         try {
             ObjectMapper mapper = new ObjectMapper();

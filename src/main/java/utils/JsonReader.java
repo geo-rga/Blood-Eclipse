@@ -17,6 +17,7 @@ public class JsonReader {
 		
 		String jsonFile = "";
 
+		// Setting JSON file to use for objects based on platform variable passed at runtime
 		try {			
 			if (System.getProperty("platform").equalsIgnoreCase("ANDROID")) {
 		        jsonFile = "androidObjects.json";
@@ -27,7 +28,7 @@ public class JsonReader {
 			throw new RuntimeException("Failed to get platform from Capabilities");	
 		}	
 		
-		
+		// Use InputStreamReader to parse the objects file ready to get information
 		try { 
 			InputStreamReader reader = new InputStreamReader(
                     JsonReader.class.getClassLoader().getResourceAsStream(jsonFile)
@@ -41,10 +42,12 @@ public class JsonReader {
 	
 
     public static By getLocator(String page, String element) {
+    	// Search for specified object in parsed elements JSON, throw error if object does not exist
         if (!jsonObjects.has(page) || !jsonObjects.getAsJsonObject(page).has(element)) {
             throw new RuntimeException("Element not found in JSON: " + page + " -> " + element);
         }
 
+        // Getting information for object 
         var locatorsArray = jsonObjects.getAsJsonObject(page)
                 .getAsJsonObject(element)
                 .getAsJsonArray("locators");
@@ -57,6 +60,7 @@ public class JsonReader {
         return getBy(type, value);
     }
 
+    // Parsing locator based on value of type
 	private static By getBy(String type, String value) {
         return switch (type.toLowerCase()) {
             case "xpath" -> By.xpath(value);

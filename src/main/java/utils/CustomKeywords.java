@@ -14,6 +14,7 @@ public class CustomKeywords {
 	}
 	
 	public boolean validateDisplayed(By loc) {
+		// Custom function for checking if an element is displayed on screen, and outputting additional logging if the object is displayed or not
 		String obj = loc.toString();
 		try {
 			WebElement el = driver.findElement(loc);
@@ -26,6 +27,7 @@ public class CustomKeywords {
 	}
 	
 	public boolean validateNotDisplayed(By loc) {
+		// Custom function for checking if an element is not displayed on screen, and outputting additional logging if the object is displayed or not
 		String obj = loc.toString();
 		try {
 			WebElement el = driver.findElement(loc);
