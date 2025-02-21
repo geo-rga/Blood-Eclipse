@@ -3,12 +3,14 @@ package tests;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.URL;
 
-import org.openqa.selenium.remote.CapabilityType;
+//import org.openqa.selenium.remote.CapabilityType;
 // Ensure that annotations always come from org.testng
 import org.testng.annotations.*;
 import io.appium.java_client.AppiumDriver;
+import utils.AndroidCapabilities;
 import utils.CustomKeywords;
-import utils.GlobalConfig;
+//import utils.GlobalConfig;
+import utils.IOSCapabilities;
 
 public class InitClass {
 	
@@ -25,28 +27,31 @@ public class InitClass {
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 			
 			if(configPlatform.equalsIgnoreCase("Android")) {
-				capabilities.setCapability(CapabilityType.PLATFORM_NAME, System.getProperty("platform"));
-				capabilities.setCapability("appium:platformVersion", GlobalConfig.androidVersion);
-				capabilities.setCapability("appium:deviceName", GlobalConfig.androidDeviceName);
-				capabilities.setCapability("appium:udid", GlobalConfig.androidUDID);
-				capabilities.setCapability("appium:app", GlobalConfig.androidPath);
-				capabilities.setCapability("appium:automationName", GlobalConfig.androidAutomationName);
-				capabilities.setCapability("appium:chromedriverAutodownload", true);
+				capabilities = AndroidCapabilities.getCapabilities();
+//				capabilities.setCapability(CapabilityType.PLATFORM_NAME, System.getProperty("platform"));
+//				capabilities.setCapability("appium:platformVersion", GlobalConfig.androidVersion);
+//				capabilities.setCapability("appium:deviceName", GlobalConfig.androidDeviceName);
+//				capabilities.setCapability("appium:udid", GlobalConfig.androidUDID);
+//				capabilities.setCapability("appium:app", GlobalConfig.androidPath);
+//				capabilities.setCapability("appium:automationName", GlobalConfig.androidAutomationName);
+//				capabilities.setCapability("appium:chromedriverAutodownload", true);
+				
 			} else if (configPlatform.equalsIgnoreCase("iOS")) {
-				capabilities.setCapability(CapabilityType.PLATFORM_NAME, System.getProperty("platform"));
-				capabilities.setCapability("appium:platformVersion", GlobalConfig.iosVersion);
-				capabilities.setCapability("appium:deviceName", GlobalConfig.iosDeviceName);
-				capabilities.setCapability("appium:udid", GlobalConfig.iosUDID);
-				capabilities.setCapability("appium:automationName", GlobalConfig.iosAutomationName);
-				capabilities.setCapability("appium:app", GlobalConfig.iosPath);
-				capabilities.setCapability("appium:xcodeOrgId", GlobalConfig.xcodeOrgId);
-				capabilities.setCapability("appium:xcodeSigningId", GlobalConfig.xcodeSigningId);
-				capabilities.setCapability("appium:updatedWDABundleId", GlobalConfig.updatedWDABundleId);
+				capabilities = IOSCapabilities.getCapabilities();
+//				capabilities.setCapability(CapabilityType.PLATFORM_NAME, System.getProperty("platform"));
+//				capabilities.setCapability("appium:platformVersion", GlobalConfig.iosVersion);
+//				capabilities.setCapability("appium:deviceName", GlobalConfig.iosDeviceName);
+//				capabilities.setCapability("appium:udid", GlobalConfig.iosUDID);
+//				capabilities.setCapability("appium:automationName", GlobalConfig.iosAutomationName);
+//				capabilities.setCapability("appium:app", GlobalConfig.iosPath);
+//				capabilities.setCapability("appium:xcodeOrgId", GlobalConfig.xcodeOrgId);
+//				capabilities.setCapability("appium:xcodeSigningId", GlobalConfig.xcodeSigningId);
+//				capabilities.setCapability("appium:updatedWDABundleId", GlobalConfig.updatedWDABundleId);
 			} else {
 				throw new IllegalArgumentException("Invalid platform: " + configPlatform);
 			}
 
-			capabilities.setCapability("appium:newCommandTimeout", 60);
+//			capabilities.setCapability("appium:newCommandTimeout", 60);
 			
 			URL url = new URL("http://127.0.0.1:4723/");
 			
